@@ -1,5 +1,5 @@
 import React from "react";
-
+import { CiShare1 } from "react-icons/ci";
 const ProjectsTemp = ({ image, title, description, link }) => {
   return (
     <div className="relative h-64 w-64 overflow-hidden rounded-xl group">
@@ -25,7 +25,9 @@ const ProjectsTemp = ({ image, title, description, link }) => {
           rel="noopener noreferrer"
           className="px-4 py-2 mt-4 text-sm font-medium text-white bg-blue-500 rounded-lg hover:bg-blue-600"
         >
-          check out
+          <div className="flex gap-2 font-semibold items-center">
+            Check Out <CiShare1 className="font-black text-lg " />
+          </div>
         </a>
       </div>
     </div>

@@ -17,7 +17,7 @@ const Projects = () => {
         Projects
       </h2>
       <div className="flex flex-col justify-between items-center gap-y-5">
-        <div className="flex gap-x-10">
+        <div className="flex  md:flex-row  flex-col gap-10">
           <motion.div
             variants={fadeIn("down", 0.2)}
             initial="hidden"
@@ -60,7 +60,7 @@ const Projects = () => {
             />
           </motion.div>
         </div>
-        <div className="flex gap-10">
+        <div className="flex gap-10 md:flex-row  flex-col">
           <motion.div
             variants={fadeIn("down", 0.5)}
             initial="hidden"
