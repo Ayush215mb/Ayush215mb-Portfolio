@@ -14,8 +14,8 @@ const First = () => {
           <h1 className="md:text-7xl text-2xl text-center md:text-start">
             AYUSH YADAV
           </h1>
-          <p className="md:text-3xl">Hello there! 🤙</p>
-          <motion.p className="md:text-xl md:max-w-xl">
+          <p className="md:text-3xl text-xl">Hello there! 🤙</p>
+          <motion.p className="md:text-2xl text-lg md:max-w-xl">
             I am a passionate Web Developer with a knack of creating beautiful
             and functional websites.
             <br /> I like transforming ideas into enaging and user-friendly web

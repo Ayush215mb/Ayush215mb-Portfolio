@@ -4,6 +4,8 @@ import Navbar from "./Components/Navbar";
 import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 
+import { Analytics } from "@vercel/analytics/react";
+
 function App() {
   return (
     <div className="mx-5  ">
@@ -13,10 +15,11 @@ function App() {
       <main>
         <First />
 
-        <Projects />
+        {/* <Projects /> */}
         <Bio />
         <Skills />
       </main>
+      <Analytics />
     </div>
   );
 }
