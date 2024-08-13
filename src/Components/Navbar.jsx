@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Variants";
+import logo from "../assets/Images/Ayush215mb-Logo.png";
+
 const Navbar = () => {
   return (
     <div>
@@ -11,7 +13,7 @@ const Navbar = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
-            src="/Images/Ayush215mb-Logo.png"
+            src={logo}
             alt="logo"
             className=" w-36 sm:w-60 md:w-80 lg:w-80 "
           />

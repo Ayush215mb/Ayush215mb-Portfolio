@@ -13,17 +13,12 @@ import { fadeIn } from "../Variants";
 const Projects = () => {
   return (
     <div className="p-20">
-      <h2 className="lg:text-4xl text-3xl mb-8 text-center font-semibold">
+      <h2 className="lg:text-4xl text-3xl mb-8 text-center font-bold">
         Projects
       </h2>
       <div className="flex flex-col justify-between items-center gap-y-5">
         <div className="flex  md:flex-row  flex-col gap-10">
-          <motion.div
-            variants={fadeIn("down", 0.2)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: true, amount: 0.7 }}
-          >
+          <motion.div>
             <ProjectsTemp
               title="Anyvend"
               image={project1}
@@ -33,12 +28,7 @@ const Projects = () => {
             />
           </motion.div>
 
-          <motion.div
-            variants={fadeIn("down", 0.3)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: true, amount: 0.7 }}
-          >
+          <motion.div>
             <ProjectsTemp
               title="Veer Solutions"
               image={project2}
@@ -46,12 +36,7 @@ const Projects = () => {
               link="https://veer-solutions.vercel.app/"
             />
           </motion.div>
-          <motion.div
-            variants={fadeIn("down", 0.4)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: true, amount: 0.7 }}
-          >
+          <motion.div>
             <ProjectsTemp
               title="COMING SOON"
               image={project3}
@@ -61,12 +46,7 @@ const Projects = () => {
           </motion.div>
         </div>
         <div className="flex gap-10 md:flex-row  flex-col">
-          <motion.div
-            variants={fadeIn("down", 0.5)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: true, amount: 0.7 }}
-          >
+          <motion.div>
             <ProjectsTemp
               title="COMING SOON"
               image={project4}
@@ -75,12 +55,7 @@ const Projects = () => {
             />
           </motion.div>
 
-          <motion.div
-            variants={fadeIn("down", 0.6)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: true, amount: 0.7 }}
-          >
+          <motion.div>
             <ProjectsTemp
               title="COMING SOON"
               image={project6}
@@ -89,12 +64,7 @@ const Projects = () => {
             />
           </motion.div>
 
-          <motion.div
-            variants={fadeIn("down", 0.7)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: true, amount: 0.7 }}
-          >
+          <motion.div>
             <ProjectsTemp
               title="COMING SOON"
               image={project5}

@@ -1,6 +1,8 @@
+import Bio from "./Components/Bio";
 import First from "./Components/First";
 import Navbar from "./Components/Navbar";
 import Projects from "./Components/Projects";
+import Skills from "./Components/Skills";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <First />
 
         <Projects />
+        <Bio />
+        <Skills />
       </main>
     </div>
   );
