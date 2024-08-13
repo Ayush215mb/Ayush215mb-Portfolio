@@ -15,7 +15,7 @@ function App() {
       <main>
         <First />
 
-        {/* <Projects /> */}
+        <Projects />
         <Bio />
         <Skills />
       </main>
