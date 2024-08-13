@@ -1,98 +1,49 @@
 import React from "react";
 import html from "../assets/Images/html-1.svg";
+import SkillsTemp from "./SkillsTemp";
 const Skills = () => {
   return (
-    <div className="my-10 px-40">
+    <div className="my-10  md:px-52 ">
       <h2 className="text-3xl  md:text-4xl mb-8 font-bold text-center">
         Skills
       </h2>
-      <div className="border-2 rounded-3xl border-gray-800 px-10 overflow-hidden">
-        <div className="flex text-xl border-b   md:justify-between  p-4 border-gray-800 items-center">
-          <div className="flex gap-2 items-center">
-            <img src={html} alt="react_logo" className="md:max-w-10 max-w-8" />
-            <p>HTML</p>
-          </div>
+      <div className="border-2 rounded-3xl border-gray-700 md:px-10 overflow-hidden w-full ">
+        <SkillsTemp name="HTML" image={html} year="1.5 years" />
+        <SkillsTemp
+          name="CSS"
+          image="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
+          year="1.5 years"
+        />
 
-          <p>1.5 Years</p>
-        </div>
+        <SkillsTemp
+          name="Java Script"
+          image="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
+          year="1.5 years"
+        />
 
-        <div className="flex text-xl border-b justify-between  p-4 border-gray-800 items-center">
-          <div className="flex gap-2 items-center">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
-              alt="react_logo"
-              className="md:max-w-10 max-w-8"
-            />
-            <p>CSS</p>
-          </div>
+        <SkillsTemp
+          name="React.js"
+          image="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+          year="1.5 years"
+        />
 
-          <p>1.5 Years</p>
-        </div>
+        <SkillsTemp
+          name="Firebase"
+          image="https://upload.wikimedia.org/wikipedia/commons/8/85/Firebase.svg"
+          year="1 year"
+        />
 
-        <div className="flex text-xl border-b justify-between  p-4 border-gray-800 items-center">
-          <div className="flex gap-2 items-center">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
-              alt="react_logo"
-              className="md:max-w-10 max-w-8"
-            />
-            <p className="text-nowrap">Java Script</p>
-          </div>
+        <SkillsTemp
+          name="React Native"
+          image="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+          year="learning"
+        />
 
-          <p>1.5 Years</p>
-        </div>
-
-        <div className="flex text-xl border-b justify-between  p-4 border-gray-800 items-center">
-          <div className="flex gap-2 items-center">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-              alt="react_logo"
-              className="md:max-w-10 max-w-8"
-            />
-            <p className="text-nowrap">React.js</p>
-          </div>
-
-          <p>1 Years</p>
-        </div>
-
-        <div className="flex text-xl border-b justify-between  p-4 border-gray-800 items-center">
-          <div className="flex gap-2 items-center">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/8/85/Firebase.svg"
-              alt="react_logo"
-              className="md:max-w-10 max-w-8"
-            />
-            <p className="text-nowrap">Firebase</p>
-          </div>
-
-          <p>1 Year</p>
-        </div>
-
-        <div className="flex text-xl border-b justify-between  p-4 border-gray-800 items-center">
-          <div className="flex gap-2 items-center">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-              alt="react_logo"
-              className="md:max-w-10 max-w-8"
-            />
-            <p className="text-nowrap">React Native</p>
-          </div>
-
-          <p>learning</p>
-        </div>
-
-        <div className="flex text-xl border-b justify-between  p-4 border-gray-800 items-center">
-          <div className="flex gap-4 items-center">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
-              alt="react_logo"
-              className="md:max-w-10 max-w-8"
-            />
-            <p className="text-nowrap">C++</p>
-          </div>
-
-          <p>learning</p>
-        </div>
+        <SkillsTemp
+          name="C++"
+          image="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
+          year="learning"
+        />
       </div>
     </div>
   );
