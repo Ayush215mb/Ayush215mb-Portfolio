@@ -21,38 +21,49 @@ const Navbar = () => {
 
         <div>
           <ul className=" hidden md:flex gap-20 text-2xl font-bold">
-            <motion.li
-              variants={fadeIn("down", 0.3)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: true, amount: 0.7 }}
-            >
-              Projects
-            </motion.li>
-            <motion.li
-              variants={fadeIn("down", 0.4)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: true, amount: 0.7 }}
-            >
-              Bio
-            </motion.li>
-            <motion.li
-              variants={fadeIn("down", 0.5)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: true, amount: 0.7 }}
-            >
-              Skills
-            </motion.li>
-            <motion.li
-              variants={fadeIn("down", 0.6)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: true, amount: 0.7 }}
-            >
-              Contact
-            </motion.li>
+            <a href="#">
+              <motion.li
+                variants={fadeIn("down", 0.3)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: true, amount: 0.7 }}
+              >
+                Projects
+              </motion.li>
+            </a>
+
+            <a href="#">
+              <motion.li
+                variants={fadeIn("down", 0.4)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: true, amount: 0.7 }}
+              >
+                Bio
+              </motion.li>
+            </a>
+
+            <a href="#">
+              <motion.li
+                variants={fadeIn("down", 0.5)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: true, amount: 0.7 }}
+              >
+                Skills
+              </motion.li>
+            </a>
+
+            <a href="#">
+              <motion.li
+                variants={fadeIn("down", 0.6)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: true, amount: 0.7 }}
+              >
+                Contact
+              </motion.li>
+            </a>
           </ul>
         </div>
       </div>
