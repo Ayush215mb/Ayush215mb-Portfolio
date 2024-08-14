@@ -91,12 +91,14 @@ function ContactUs() {
             ></textarea>
           </div>
 
-          <button
-            type="submit"
-            className="w-full py-2 px-4 bg-transparent rounded-md hover:bg-cyan-600"
-          >
-            <span className="text-xl font-bold">Submit</span>
-          </button>
+          <div className="flex justify-center">
+            <button
+              type="submit"
+              className="w-48  py-2 px-4 text-xl font-bold bg-transparent rounded-md hover:bg-transparent hover:border "
+            >
+              Submit
+            </button>
+          </div>
         </motion.form>
       </div>
     </motion.div>
