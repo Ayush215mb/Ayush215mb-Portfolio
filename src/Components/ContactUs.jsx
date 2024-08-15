@@ -1,44 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { fadeIn } from "../Variants";
 
 function ContactUs() {
-  const [selectedOption, setSelectedOption] = useState(null);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    option: "",
-    budget: "",
-    message: "",
-  });
-
-  const handleOptionClick = (option, field) => {
-    setFormData({
-      ...formData,
-      [field]: option,
-    });
-    setSelectedOption(option);
-  };
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+  const [Name, setName] = useState("");
+  const [Email, setEmail] = useState("");
+  const [Message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, option, budget, message } = formData;
 
-    const subject = `Hello there, I am ${name}`;
-    const body = `${message}`;
-    const mailtoLink = `mailto:sidharth197502@gmail.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}&cc=ayush215mb@gmail.com`;
+    const serviceID = "service_sidharth197502";
+    const templateID = "template_wqffvui";
+    const publickey = "bFACtl6s8w3jYYnOm";
 
-    window.location.href = mailtoLink;
+    const templateParams = {
+      from_name: Name,
+      from_email: Email,
+      to_name: "Ayush Yadav",
+      message: Message,
+    };
+
+    console.log(Name, Email, Message);
+
+    emailjs
+      .send(serviceID, templateID, templateParams, publickey)
+      .then((response) => {
+        alert("Thank You for Contacting🙌");
+        console.log("email sent succesfully");
+        setEmail("");
+        setMessage("");
+        setName("");
+      })
+      .catch((error) => {
+        console.log("failed", error);
+      });
   };
 
   return (
@@ -56,9 +53,10 @@ function ContactUs() {
             <label className="block mb-2 text-lg">Your name </label>
             <input
               type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
+              value={Name}
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
               className="w-full py-2 px-4  bg-transparent border-b "
               placeholder="Enter your name"
               required
@@ -68,9 +66,11 @@ function ContactUs() {
             <label className="block mb-2 text-lg">Your email </label>
             <input
               type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
+              name="user_email"
+              value={Email}
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
               className="w-full py-2 px-4 border-b bg-transparent "
               placeholder="Enter your email"
               required
@@ -82,10 +82,11 @@ function ContactUs() {
               Your message:
             </label>
             <textarea
-              id="message"
               name="message"
-              value={formData.brief}
-              onChange={handleChange}
+              value={Message}
+              onChange={(e) => {
+                setMessage(e.target.value);
+              }}
               className="w-full py-2 px-4 min-h-20   bg-transparent  border rounded-b-lg border-t-0  "
               placeholder="write your messaage..."
             ></textarea>
