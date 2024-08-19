@@ -13,8 +13,8 @@ const Bio = () => {
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
           >
-            I am a 20-year-old from Kolkata, India currently pursuing a B.Tech
-            in Computer Science and Engineering(2023-27).
+            I am a 20-year-old from Kolkata,India currently pursuing B.Tech in
+            Computer Science and Engineering(2023-27).
           </motion.p>
           <motion.p
             variants={fadeIn("right", 0.4)}
