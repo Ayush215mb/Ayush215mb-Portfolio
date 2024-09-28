@@ -7,7 +7,7 @@ import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   return (
