@@ -38,10 +38,10 @@ const Projects = () => {
           </motion.div>
           <motion.div>
             <ProjectsTemp
-              title="COMING SOON"
+              title="YAIT"
               image={project3}
-              description=""
-              link=""
+              description="Your Ai Therapist, it's still in development phase so please try it out share your valuable insights so that we can improve it."
+              link="https://yait.onrender.com/"
             />
           </motion.div>
         </div>
