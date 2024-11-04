@@ -22,8 +22,7 @@ const Projects = () => {
             <ProjectsTemp
               title="Anyvend"
               image={project1}
-              description="Designed and developed a website that integrates with vending machines equipped with
-                      QR codes. "
+              description="Designed and developed a website that integrates with vending machines. (new version is in development) "
               link="https://avt1-9a0bb.web.app/"
             />
           </motion.div>
