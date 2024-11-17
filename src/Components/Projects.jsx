@@ -20,10 +20,18 @@ const Projects = () => {
         <div className="flex  md:flex-row  flex-col gap-10">
           <motion.div>
             <ProjectsTemp
-              title="Anyvend"
-              image={project1}
-              description="Designed and developed a website that integrates with vending machines. (new version is in development) "
-              link="https://avt1-9a0bb.web.app/"
+              title="YAIT"
+              image={project3}
+              description="Your Ai Therapist, it's still in development phase so please try it out share your valuable insights so that we can improve it."
+              link="https://yait.onrender.com/"
+            />
+          </motion.div>
+          <motion.div>
+            <ProjectsTemp
+              title="Parse Spy"
+              image={project4}
+              description="A desktop app which automates social media investigations with a complete report."
+              link="https://parsespy.vercel.app/"
             />
           </motion.div>
 
@@ -35,22 +43,14 @@ const Projects = () => {
               link="https://veer-solutions.vercel.app/"
             />
           </motion.div>
-          <motion.div>
-            <ProjectsTemp
-              title="YAIT"
-              image={project3}
-              description="Your Ai Therapist, it's still in development phase so please try it out share your valuable insights so that we can improve it."
-              link="https://yait.onrender.com/"
-            />
-          </motion.div>
         </div>
         <div className="flex gap-10 md:flex-row  flex-col">
           <motion.div>
             <ProjectsTemp
-              title="COMING SOON"
-              image={project4}
-              description=""
-              link=""
+              title="Anyvend"
+              image={project1}
+              description="Designed and developed a website that integrates with vending machines. (new version is in development) "
+              link="https://avt1-9a0bb.web.app/"
             />
           </motion.div>
 
