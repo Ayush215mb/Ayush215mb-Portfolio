@@ -22,12 +22,13 @@ const Bio = () => {
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
           >
-            Other than that, I am also a dedicated freelance front-end web
-            developer with experience in creating high-quality websites. Skilled
-            in React.js and firebase, I aim to leverage my expertise to build
-            innovative digital solutions. Passionate about crafting userfriendly
-            interfaces and embracing cutting-edge technologies for efficient
-            development.
+            Other than that, I am also a dedicated freelance MERN stack Web
+            Developer with experience in creating high-quality websites and web
+            automation softwares. Skilled in React.js, Nodejs, Express, pdf-kit,
+            Mongoose, Tailwind CSS, Firebase, Selenium, ElectronJS, I aim to
+            leverage my expertise to build innovative digital solutions.
+            Passionate about crafting userfriendly interfaces and embracing
+            cutting-edge technologies for efficient development.
           </motion.p>
           <motion.p
             variants={fadeIn("right", 0.6)}
