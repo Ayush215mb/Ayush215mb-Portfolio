@@ -1,4 +1,3 @@
-import React from "react";
 import project1 from "../assets/Images/project1.jpeg";
 import project2 from "../assets/Images/project2.jpeg";
 import project3 from "../assets/Images/project3.jpeg";
@@ -8,7 +7,6 @@ import project6 from "../assets/Images/project6.jpeg";
 import ProjectsTemp from "./ProjectsTemp";
 
 import { motion } from "framer-motion";
-import { fadeIn } from "../Variants";
 
 const Projects = () => {
   return (
@@ -28,13 +26,23 @@ const Projects = () => {
           </motion.div>
           <motion.div>
             <ProjectsTemp
+              title="Crop Sense"
+              image={project6}
+              description="A platform which helps predicts the ideal crop and its expected yeild based on the composition details of the soil and climate of the region."
+              link="https://crop-sense-ai.vercel.app/"
+            />
+          </motion.div>
+
+          <motion.div>
+            <ProjectsTemp
               title="Parse Spy"
               image={project4}
               description="A desktop app which automates social media investigations with a complete report."
               link="https://parsespy.vercel.app/"
             />
           </motion.div>
-
+        </div>
+        <div className="flex gap-10 md:flex-row  flex-col">
           <motion.div>
             <ProjectsTemp
               title="Veer Solutions"
@@ -43,23 +51,13 @@ const Projects = () => {
               link="https://veer-solutions.vercel.app/"
             />
           </motion.div>
-        </div>
-        <div className="flex gap-10 md:flex-row  flex-col">
+
           <motion.div>
             <ProjectsTemp
               title="Anyvend"
               image={project1}
               description="Designed and developed a website that integrates with vending machines. (new version is in development) "
               link="https://avt1-9a0bb.web.app/"
-            />
-          </motion.div>
-
-          <motion.div>
-            <ProjectsTemp
-              title="COMING SOON"
-              image={project6}
-              description=""
-              link=""
             />
           </motion.div>
 
