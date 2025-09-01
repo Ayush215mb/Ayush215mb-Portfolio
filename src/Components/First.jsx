@@ -49,7 +49,7 @@ const First = () => {
             className="md:text-2xl text-lg md:max-w-xl"
           >
             A developer bringing ideas to life through web and mobile
-            applications, while diving into Web3.
+            applications.
           </motion.p>
 
           <div className="flex justify-center items-center w-full max-w-md mx-auto rounded-lg overflow-hidden hover:border hover:border-white cursor-pointer">
