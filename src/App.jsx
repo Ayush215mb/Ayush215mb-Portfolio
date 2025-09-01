@@ -12,12 +12,9 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 function App() {
   return (
     <div className="mx-5  ">
-      <header>
-        <Navbar />
-      </header>
-      <main>
+      <header>{/* <Navbar /> */}</header>
+      <main className="md:mt-40 mt-20 ">
         <First />
-
         <Projects />
         <Bio />
         <Skills />

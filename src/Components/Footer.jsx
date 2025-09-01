@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../Variants";
+import githublogo from "../assets/Images/github.png";
+import twitterlogo from "../assets/Images/twitter.jpg";
 const Footer = () => {
   return (
     <div className="flex my-10  md:mx-40 items-center justify-center  ">
@@ -15,10 +17,7 @@ const Footer = () => {
             className="max-w-12"
           />
         </a>
-        <a
-          href="https://www.instagram.com/ayush215mb?igsh=MWk4OGRtMW11Mzl0aA=="
-          target="_blank"
-        >
+        <a href="https://www.instagram.com/ayush215mb" target="_blank">
           <motion.img
             variants={fadeIn("up", 0.3)}
             initial="hidden"
@@ -35,9 +34,9 @@ const Footer = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
-            src="  https://cdn1.iconfinder.com/data/icons/logotypes/32/github-256.png"
+            src={githublogo}
             alt="Github_logo"
-            className="max-w-12 bg-slate-200"
+            className="max-w-12 "
           />
         </a>
 
@@ -60,6 +59,17 @@ const Footer = () => {
             viewport={{ once: true, amount: 0.7 }}
             src=" https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/discord-64.png"
             alt="discord_logo"
+            className="max-w-12 "
+          />
+        </a>
+        <a href="https://x.com/glevoidd" target="_blank">
+          <motion.img
+            variants={fadeIn("up", 0.6)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            src={twitterlogo}
+            alt="twitter_logo"
             className="max-w-12 "
           />
         </a>

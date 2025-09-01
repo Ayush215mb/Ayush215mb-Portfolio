@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div>
       <div className="flex md:justify-around justify-center py-5  items-center">
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <motion.img
             variants={fadeIn("down", 0.2)}
             initial="hidden"
@@ -17,7 +17,7 @@ const Navbar = () => {
             alt="logo"
             className=" w-36 sm:w-60 md:w-80 lg:w-80 "
           />
-        </div>
+        </div> */}
 
         <div>
           <ul className=" hidden md:flex gap-20 text-2xl font-bold">

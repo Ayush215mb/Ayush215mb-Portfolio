@@ -13,8 +13,8 @@ const Bio = () => {
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
           >
-            I am a 20-year-old from Kolkata,India currently pursuing B.Tech in
-            Computer Science and Engineering(2023-27).
+            I’m from India and currently in my 3rd year of pursuing a B.Tech in
+            Computer Science.
           </motion.p>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -22,13 +22,12 @@ const Bio = () => {
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
           >
-            Other than that, I am also a dedicated freelance MERN stack Web
-            Developer with experience in creating high-quality websites and web
-            automation softwares. Skilled in React.js, Nodejs, Express, pdf-kit,
-            Mongoose, Tailwind CSS, Firebase, Selenium, ElectronJS, I aim to
-            leverage my expertise to build innovative digital solutions.
-            Passionate about crafting userfriendly interfaces and embracing
-            cutting-edge technologies for efficient development.
+            I’ve always enjoyed the process of taking a small idea and actually
+            building it into something people can use. That’s what got me
+            interested in development. I’ve built projects across the
+            stack(MERN) and also explored mobile development with React Native,
+            which has given me a well-rounded perspective on creating solutions
+            that actually reach users.
           </motion.p>
           <motion.p
             variants={fadeIn("right", 0.6)}
@@ -36,10 +35,10 @@ const Bio = () => {
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
           >
-            I actively participate in online hackathons and coding competitions,
-            if you want to add me in your team then reach out to me on LinkedIn
-            .If you have any other questions, feel free to ask in the contact
-            page or directly DM me on any of my social media accounts.
+            For the past year, I’ve been freelancing, which gave me the
+            opportunity to work directly with clients, manage projects
+            independently, and deliver real-world solutions—something that
+            really sharpened both my technical and communication skills.
           </motion.p>
         </div>
       </div>

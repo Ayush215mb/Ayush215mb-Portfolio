@@ -16,7 +16,11 @@ const Skills = () => {
           whileInView={"show"}
           viewport={{ once: true, amount: 0.7 }}
         >
-          <SkillsTemp name="HTML" image={html} year="2 years" />
+          <SkillsTemp
+            name="Java Script"
+            image="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
+            year="2 years"
+          />{" "}
         </motion.div>
 
         <motion.div
@@ -26,8 +30,8 @@ const Skills = () => {
           viewport={{ once: true, amount: 0.7 }}
         >
           <SkillsTemp
-            name="CSS"
-            image="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
+            name="TypeScript"
+            image="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
             year="2 years"
           />
         </motion.div>
@@ -39,9 +43,9 @@ const Skills = () => {
           viewport={{ once: true, amount: 0.7 }}
         >
           <SkillsTemp
-            name="Java Script"
-            image="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
-            year="2 years"
+            name="React.js"
+            image="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+            year="2 year"
           />
         </motion.div>
 
@@ -51,10 +55,11 @@ const Skills = () => {
           whileInView={"show"}
           viewport={{ once: true, amount: 0.7 }}
         >
+          {" "}
           <SkillsTemp
-            name="React.js"
-            image="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-            year="1 year"
+            name="Firebase"
+            image="https://upload.wikimedia.org/wikipedia/commons/8/85/Firebase.svg"
+            year="2 year"
           />
         </motion.div>
 
@@ -65,8 +70,8 @@ const Skills = () => {
           viewport={{ once: true, amount: 0.7 }}
         >
           <SkillsTemp
-            name="Firebase"
-            image="https://upload.wikimedia.org/wikipedia/commons/8/85/Firebase.svg"
+            name="React Native"
+            image="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
             year="1 year"
           />
         </motion.div>
@@ -78,8 +83,21 @@ const Skills = () => {
           viewport={{ once: true, amount: 0.7 }}
         >
           <SkillsTemp
-            name="React Native"
-            image="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+            name="Mongo DB"
+            image="https://upload.wikimedia.org/wikipedia/commons/0/00/Mongodb-svgrepo-com.svg"
+            year="1 year"
+          />
+        </motion.div>
+
+        <motion.div
+          variants={fadeIn("right", 0.8)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+        >
+          <SkillsTemp
+            name="Nest JS"
+            image="https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg"
             year="learning"
           />
         </motion.div>
@@ -91,8 +109,8 @@ const Skills = () => {
           viewport={{ once: true, amount: 0.7 }}
         >
           <SkillsTemp
-            name="C++"
-            image="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
+            name="Rust"
+            image="https://www.rust-lang.org/static/images/rust-logo-blk.svg"
             year="learning"
           />
         </motion.div>

@@ -1,8 +1,15 @@
-import React from "react";
 import { motion } from "framer-motion";
 import ayush215mb from "../assets/Images/Ayush215mb.jpg";
 import { fadeIn } from "../Variants";
+import { GoRocket } from "react-icons/go";
+
 const First = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/Ayush_RESUME.pdf"; // path relative to public/
+    link.download = "Ayush_RESUME.pdf"; // file name for download
+    link.click();
+  };
   return (
     <div className=" mx-10 mb-16 ">
       <div className="items-center md:flex-row-reverse  flex-col justify-center py-7 flex gap-10 lg:justify-around ">
@@ -41,11 +48,18 @@ const First = () => {
             viewport={{ once: true, amount: 0.7 }}
             className="md:text-2xl text-lg md:max-w-xl"
           >
-            I am a passionate Web Developer with a knack of creating beautiful
-            and functional websites.
-            <br /> I like transforming ideas into enaging and user-friendly web
-            experiences.
+            A developer bringing ideas to life through web and mobile
+            applications, while diving into Web3.
           </motion.p>
+
+          <div className="flex justify-center items-center w-full max-w-md mx-auto rounded-lg overflow-hidden hover:border hover:border-white cursor-pointer">
+            <button
+              className=" flex  items-center justify-center gap-4 bg-transparent text-white font-semibold md:text-2xl text-lg md:max-w-xl py-2 rounded-xl"
+              onClick={handleDownload}
+            >
+              Resume <GoRocket className="font-black text-xl" />
+            </button>
+          </div>
         </div>
       </div>
     </div>
