@@ -1,8 +1,8 @@
-import React from "react";
-import html from "../assets/Images/html-1.svg";
+// import html from "../assets/Images/html-1.svg";
 import SkillsTemp from "./SkillsTemp";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Variants";
+import Nextjs from "../assets/Images/Nextjs.svg";
 const Skills = () => {
   return (
     <div className="my-16  md:px-52 ">
@@ -56,11 +56,7 @@ const Skills = () => {
           viewport={{ once: true, amount: 0.7 }}
         >
           {" "}
-          <SkillsTemp
-            name="Firebase"
-            image="https://upload.wikimedia.org/wikipedia/commons/8/85/Firebase.svg"
-            year="2 year"
-          />
+          <SkillsTemp name="Next.js" image={Nextjs} year="1 year" />
         </motion.div>
 
         <motion.div

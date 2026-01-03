@@ -1,5 +1,3 @@
-import React from "react";
-
 const SkillsTemp = ({ image, name, year }) => {
   return (
     <div className="flex text-xl border-b  justify-between  p-4 border-gray-700 items-center">
