@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ayush215mb from "../assets/Images/Ayush215mb.jpg";
+import ayush215mb from "../assets/Images/AyushYadav.png";
 import { fadeIn } from "../Variants";
 import { GoRocket } from "react-icons/go";
 
@@ -52,13 +52,19 @@ const First = () => {
             applications.
           </motion.p>
 
-          <div className="flex justify-center items-center w-full max-w-md mx-auto rounded-lg overflow-hidden hover:border hover:border-white cursor-pointer">
-            <button
-              className=" flex  items-center justify-center gap-4 bg-transparent text-white font-semibold md:text-2xl text-lg md:max-w-xl py-2 rounded-xl"
+          <div className="flex justify-center items-center max-w-xl mx-auto rounded-lg overflow-hidden hover:border hover:border-white cursor-pointer   ">
+            <motion.button
+              variants={fadeIn("down", 1)}
+              // initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.7 }}
+              className=" bg-transparent py-2 rounded-lg px-3 text-white"
               onClick={handleDownload}
             >
-              Resume <GoRocket className="font-black text-xl" />
-            </button>
+              <p className="text-white font-semibold md:text-2xl text-lg  flex  items-center justify-center  gap-4 ">
+                Resume <GoRocket className="font-black text-xl" />
+              </p>
+            </motion.button>
           </div>
         </div>
       </div>

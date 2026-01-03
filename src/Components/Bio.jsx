@@ -13,8 +13,8 @@ const Bio = () => {
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
           >
-            I’m from India and currently in my 3rd year of pursuing a B.Tech in
-            Computer Science.
+            I&apos;m from India and currently in my 3rd year of pursuing a
+            B.Tech in Computer Science.
           </motion.p>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -22,12 +22,12 @@ const Bio = () => {
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
           >
-            I’ve always enjoyed the process of taking a small idea and actually
-            building it into something people can use. That’s what got me
-            interested in development. I’ve built projects across the
-            stack(MERN) and also explored mobile development with React Native,
-            which has given me a well-rounded perspective on creating solutions
-            that actually reach users.
+            I&apos;ve always enjoyed the process of taking a small idea and
+            actually building it into something people can use. That&apos;s what
+            got me interested in development. I&apos;ve built projects across
+            the stack React, Next.js & React Native. It has given me a
+            well-rounded perspective on creating solutions that actually reach
+            users.
           </motion.p>
           <motion.p
             variants={fadeIn("right", 0.6)}
@@ -35,7 +35,7 @@ const Bio = () => {
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
           >
-            For the past year, I’ve been freelancing, which gave me the
+            For the past year, I&apos;ve been freelancing, which gave me the
             opportunity to work directly with clients, manage projects
             independently, and deliver real-world solutions—something that
             really sharpened both my technical and communication skills.

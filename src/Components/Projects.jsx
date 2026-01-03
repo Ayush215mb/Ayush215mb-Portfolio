@@ -18,27 +18,27 @@ const Projects = () => {
         <div className="flex  md:flex-row  flex-col gap-10">
           <motion.div>
             <ProjectsTemp
+              title="Echomate"
+              image={project1}
+              description="Building an AI sales Agent for Educational institutes."
+              link="https://echomate-fr.vercel.app/"
+            />
+          </motion.div>
+          <motion.div>
+            <ProjectsTemp
               title="YAIT"
               image={project3}
-              description="Your Ai Therapist, it's still in development phase so please try it out share your valuable insights so that we can improve it."
+              description="Built an AI therapist chat bot."
               link="https://yait.onrender.com/"
             />
           </motion.div>
+
           <motion.div>
             <ProjectsTemp
               title="Crop Sense"
               image={project6}
               description="A platform which helps predicts the ideal crop and its expected yeild based on the composition details of the soil and climate of the region."
               link="https://crop-sense-ai.vercel.app/"
-            />
-          </motion.div>
-
-          <motion.div>
-            <ProjectsTemp
-              title="Parse Spy"
-              image={project4}
-              description="A desktop app which automates social media investigations with a complete report."
-              link="https://parsespy.vercel.app/"
             />
           </motion.div>
         </div>
@@ -54,19 +54,19 @@ const Projects = () => {
 
           <motion.div>
             <ProjectsTemp
-              title="Anyvend"
-              image={project1}
-              description="Designed and developed a website that integrates with vending machines. (new version is in development) "
-              link="https://avt1-9a0bb.web.app/"
+              title="Parse Spy"
+              image={project4}
+              description="A desktop app which automates social media investigations with a complete report."
+              link="https://parsespy.vercel.app/"
             />
           </motion.div>
 
           <motion.div>
             <ProjectsTemp
-              title="COMING SOON"
+              title="E-commerce frontend"
               image={project5}
-              description=""
-              link=""
+              description="This is just as an proof of my skills in developing frontend of a e-commerce site."
+              link="https://themuze.vercel.app/"
             />
           </motion.div>
         </div>
