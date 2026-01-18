@@ -6,8 +6,8 @@ import { GoRocket } from "react-icons/go";
 const First = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Ayush_RESUME.pdf"; // path relative to public/
-    link.download = "Ayush_RESUME.pdf"; // file name for download
+    link.href = "/CV_AYUSH_YADAV.pdf"; // path relative to public/
+    link.download = "CV_AYUSH_YADAV.pdf"; // file name for download
     link.click();
   };
   return (

@@ -37,7 +37,20 @@ const Skills = () => {
         </motion.div>
 
         <motion.div
-          variants={fadeIn("right", 0.4)}
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+        >
+          <SkillsTemp
+              name="Python"
+              image="https://img.icons8.com/?size=100&id=13441&format=png&color=000000"
+              year="2 years"
+          />
+        </motion.div>
+
+        <motion.div
+          variants={fadeIn("right", 0.5)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.7 }}
@@ -50,7 +63,7 @@ const Skills = () => {
         </motion.div>
 
         <motion.div
-          variants={fadeIn("left", 0.5)}
+          variants={fadeIn("left", 0.6)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.7 }}
@@ -60,7 +73,7 @@ const Skills = () => {
         </motion.div>
 
         <motion.div
-          variants={fadeIn("right", 0.6)}
+          variants={fadeIn("right", 0.7)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.7 }}
@@ -73,20 +86,7 @@ const Skills = () => {
         </motion.div>
 
         <motion.div
-          variants={fadeIn("left", 0.7)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: true, amount: 0.7 }}
-        >
-          <SkillsTemp
-            name="Mongo DB"
-            image="https://upload.wikimedia.org/wikipedia/commons/0/00/Mongodb-svgrepo-com.svg"
-            year="1 year"
-          />
-        </motion.div>
-
-        <motion.div
-          variants={fadeIn("right", 0.8)}
+          variants={fadeIn("right", 0.9)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.7 }}
@@ -94,22 +94,24 @@ const Skills = () => {
           <SkillsTemp
             name="Nest JS"
             image="https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg"
-            year="learning"
+            year="1 year"
           />
         </motion.div>
 
         <motion.div
-          variants={fadeIn("right", 0.8)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: true, amount: 0.7 }}
+            variants={fadeIn("left", 0.8)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
         >
           <SkillsTemp
-            name="Rust"
-            image="https://www.rust-lang.org/static/images/rust-logo-blk.svg"
-            year="learning"
+              name="Go lang"
+              image="https://img.icons8.com/?size=100&id=44442&format=png&color=000000"
+              year="basic"
           />
         </motion.div>
+
+
       </div>
     </div>
   );
