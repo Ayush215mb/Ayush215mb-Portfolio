@@ -14,7 +14,7 @@ export default function NavbarText({
         <li
           key={item}
           onClick={() => setActiveBar(item)}
-          className={`text-lg cursor-pointer px-4 ${
+          className={` cursor-pointer px-4 ${
             activeBar === item
               ? "text-white bg-neutral-600/40 rounded-2xl"
               : "hover:text-white"

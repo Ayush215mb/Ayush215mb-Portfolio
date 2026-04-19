@@ -9,7 +9,7 @@ export default function BgCard({
 }>): React.ReactNode {
   return (
     <div
-      className={`border border-neutral-600 rounded-lg p-6 bg-neutral-900 ${className} `}
+      className={`border border-neutral-600 rounded-lg p-6 bg-neutral-800 ${className} `}
     >
       {children}
     </div>

@@ -1,6 +1,6 @@
 import BgCard from "../ui/bg-Card";
 import Image from "next/image";
-import { socials } from "@/constants/socials";
+import { socials } from "@/components/ui/socials";
 export default function Hero() {
   return (
     <BgCard className="w-2/3 ">
@@ -41,8 +41,12 @@ export default function Hero() {
         </p>
         <br />
         <p>
-          I design and ship full-stack products end to end. Whether I&apos;m
-          architecting a backend, designing the frontend, or optimizing state
+          I design and ship full-stack products{" "}
+          <span className="text-white font-bold">end to end</span>. Whether
+          I&apos;m{" "}
+          <span className="text-white font-bold">architecting a backend</span>,{" "}
+          <span className="text-white font-bold">designing the frontend</span>,
+          or <span className="text-white font-bold">optimizing state</span>{" "}
           across 30 screens, I own the work until it works.
         </p>
         <br />
