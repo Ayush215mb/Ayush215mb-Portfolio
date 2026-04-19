@@ -6,7 +6,7 @@ import { DatabaseAndTools } from "../ui/dbandtools";
 
 const TechStack = () => {
   return (
-    <div className="w-2/3">
+    <section className="w-2/3">
       <p className="text-lg font-bold text-white">Tech Stack</p>
       <p className="text-sm text-gray-200">Technologies I work with</p>
 
@@ -16,7 +16,7 @@ const TechStack = () => {
         <TechBox heading="Bakcend" Techs={Backend} />
         <TechBox heading="Database and Tools" Techs={DatabaseAndTools} />
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,12 +1,14 @@
 import Hero from "@/components/sections/hero";
+import Projects from "@/components/sections/projects";
 import TechStack from "@/components/sections/TechStack";
 
 const Homepage = () => {
   return (
-    <section className="flex justify-center items-center flex-col gap-16">
+    <div className="flex justify-center items-center flex-col gap-16">
       <Hero />
       <TechStack />
-    </section>
+      <Projects />
+    </div>
   );
 };
 

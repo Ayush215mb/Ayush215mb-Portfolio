@@ -17,22 +17,22 @@ export const socials: social[] = [
     name: "Github",
     link: "https://github.com/Ayush215mb",
     icon: () => {
-      return <BsGithub size={18} />;
+      return <BsGithub />;
     },
   },
   {
     name: "Linkedin",
     link: "https://www.linkedin.com/in/ayush215mb/",
-    icon: () => <BsLinkedin size={18} />,
+    icon: () => <BsLinkedin />,
   },
   {
     name: "Twitter",
     link: "https://x.com/Glevoidd",
-    icon: () => <BsTwitterX size={18} />,
+    icon: () => <BsTwitterX />,
   },
   {
     name: "Resume",
     link: "https://drive.google.com/file/d/1suxUsgwERKwUrb5P22r5721UzOnvEGMo/view",
-    icon: () => <BsFileEarmarkText size={18} />,
+    icon: () => <BsFileEarmarkText />,
   },
 ];
