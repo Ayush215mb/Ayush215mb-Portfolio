@@ -18,9 +18,10 @@ const TechBox = ({
             return (
               <span
                 key={Tech.name}
-                className="flex gap-2 border-neutral-700 border px-3 py-2 w-fit rounded-lg hover:bg-neutral-700 hover:border-neutral-600 cursor-default "
+                className="flex gap-2 border-neutral-700 border px-3 py-2 w-fit rounded-lg hover:bg-neutral-700 hover:border-white cursor-default hover:scale-105 "
               >
                 {Tech.svg()}
+
                 <p className="text-white text-xs text-nowrap">{Tech.name}</p>
               </span>
             );

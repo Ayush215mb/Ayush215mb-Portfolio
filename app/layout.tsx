@@ -17,9 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${manrope.className}  h-full antialiased`}>
-      <body className=" bg-neutral-950 py-36 ">
+      <body className=" bg-neutral-950 py-20 ">
         <Navbar />
-        <main className="w-full my-16">{children}</main>
+        <main className="w-full my-10">{children}</main>
       </body>
     </html>
   );

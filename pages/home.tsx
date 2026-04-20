@@ -1,3 +1,4 @@
+import ContactUs from "@/components/sections/contactUs";
 import Hero from "@/components/sections/hero";
 import Projects from "@/components/sections/projects";
 import TechStack from "@/components/sections/TechStack";
@@ -8,6 +9,7 @@ const Homepage = () => {
       <Hero />
       <TechStack />
       <Projects />
+      <ContactUs />
     </div>
   );
 };

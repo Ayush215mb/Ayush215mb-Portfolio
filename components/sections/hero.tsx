@@ -24,11 +24,13 @@ export default function Hero() {
           <div className="flex justify-center m ">
             {socials.map((social) => {
               return (
-                <a key={social.link} href={social.link} target="_blank">
-                  <span className="hover:bg-neutral-700 flex p-3 rounded-lg max-h-12 cursor-pointer justify-center items-center ">
-                    <p className="text-white size-4 "> {social.icon()}</p>
-                  </span>
-                </a>
+                <div key={social.link}>
+                  <a href={social.link} target="_blank">
+                    <span className="hover:bg-neutral-700 flex p-3 rounded-lg max-h-12 cursor-pointer justify-center items-center ">
+                      <p className="text-white size-4 "> {social.icon()}</p>
+                    </span>
+                  </a>
+                </div>
               );
             })}
           </div>
