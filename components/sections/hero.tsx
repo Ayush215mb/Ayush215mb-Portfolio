@@ -4,7 +4,7 @@ import { socials } from "@/components/ui/socials";
 export default function Hero() {
   return (
     <section className="w-2/3">
-      <BgCard className=" ">
+      <BgCard className=" w-full">
         <div className="flex md:justify-between mb-10  flex-col md:flex-row">
           <div className="flex gap-4 md:items-start flex-col md:flex-row items-center">
             <Image

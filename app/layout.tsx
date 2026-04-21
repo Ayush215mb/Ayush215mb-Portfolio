@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/common/navbar";
+import FractalTree from "@/components/common/fractal-tree";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${manrope.className}  h-full antialiased`}>
       <body className=" bg-neutral-950 py-20 ">
+        <FractalTree />
         <Navbar />
         <main className="w-full my-10">{children}</main>
       </body>

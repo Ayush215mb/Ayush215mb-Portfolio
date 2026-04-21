@@ -42,14 +42,14 @@ const Sentinel = () => {
       </div>
       <div className="flex">
         <a href="https://sentinel.theprinceraj.tech" target="_blank">
-          <button className="px-4 py-2 border border-neutral-700 bg-neutral-800 rounded-l-lg hover:bg-neutral-700 hover:border-white cursor-pointer flex gap-2 hover:scale-105 ">
+          <button className="px-4 py-2 border border-neutral-700 rounded-l-lg hover:bg-neutral-700 hover:border-white cursor-pointer flex gap-2 hover:scale-105 ">
             <p className="text-white font-bold">Live Link</p>
             <span>🔗</span>
           </button>
         </a>
 
         <a href="https://www.youtube.com/watch?v=PTOFpwGESmE" target="_blank">
-          <button className="px-4 py-2 border border-neutral-700 bg-neutral-800 rounded-r-lg hover:bg-neutral-700 hover:border-white cursor-pointer flex gap-2 hover:scale-105 ">
+          <button className="px-4 py-2 border border-neutral-700  rounded-r-lg hover:bg-neutral-700 hover:border-white cursor-pointer flex gap-2 hover:scale-105 ">
             <p className="text-white font-bold">Youtube Link</p>
             <span>🎥</span>
           </button>
