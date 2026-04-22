@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className=" bg-neutral-950 py-20 ">
         <FractalTree />
         <Navbar />
-        <main className="w-full my-10">{children}</main>
+        <main className="w-full my-10 ">{children}</main>
       </body>
     </html>
   );

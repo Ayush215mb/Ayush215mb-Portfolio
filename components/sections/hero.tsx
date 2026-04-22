@@ -1,6 +1,7 @@
 import BgCard from "../ui/bg-Card";
 import Image from "next/image";
-import { socials } from "@/components/ui/socials";
+import { socials } from "@/components/icons/socials";
+import Customtext from "@/components/ui/CustomText";
 export default function Hero() {
   return (
     <section className="w-2/3">
@@ -16,9 +17,9 @@ export default function Hero() {
               className="border border-neutral-100 rounded-2xl lg:max-w-md sm:max-w-sm max-w-xs  "
             />
             <div className="text-white">
-              <p className="text-lg text-bold">Ayush Yadav</p>
-              <p className="text-sm text-gray-300 ">Full-Stack Developer</p>
-              <p className="text-sm text-gray-300 "> ayush215mb@gmail.com </p>
+              <Customtext bold={true}>Ayush Yadav </Customtext>
+              <Customtext>Full-Stack Developer</Customtext>
+              <Customtext> ayush215mb@gmail.com </Customtext>
             </div>
           </div>
           <div className="flex justify-center m ">
@@ -37,36 +38,35 @@ export default function Hero() {
         </div>
 
         <div className="text-gray-300 pt-6 border-t border-neutral-600 text-sm px-4 ">
-          <p className="">
+          <Customtext>
             Hi, I&apos;m
-            <span className="font-bold text-white"> Ayush Yadav</span>, a
-            Full-Stack Developer from 🇮🇳 India.
-          </p>
+            <Customtext bold={true}> Ayush Yadav</Customtext>, a Full-Stack
+            Developer from 🇮🇳 India.
+          </Customtext>
           <br />
-          <p>
+          <Customtext>
             I design and ship full-stack products{" "}
-            <span className="text-white font-bold">end to end</span>. Whether
-            I&apos;m{" "}
-            <span className="text-white font-bold">architecting a backend</span>
-            ,{" "}
-            <span className="text-white font-bold">designing the frontend</span>
-            , or <span className="text-white font-bold">optimizing state</span>{" "}
+            <Customtext bold={true}>end to end</Customtext>. Whether I&apos;m{" "}
+            <Customtext bold={true}>architecting a backend</Customtext>,{" "}
+            <Customtext bold={true}>designing the frontend</Customtext>, or{" "}
+            <Customtext bold={true}>optimizing state</Customtext>
             across 30 screens, I own the work until it works.
-          </p>
+          </Customtext>
           <br />
-          <p>
+          <Customtext>
             You can reach me on
-            <a href="https://www.linkedin.com/in/ayush215mb/" target="_blank">
-              {" "}
-              <span className="font-bold text-white">Linkedin DMs</span>
-            </a>{" "}
-            or{" "}
-            <a href="mailto:ayush215mb@gmail.com" target="_blank">
-              {" "}
-              <span className="font-bold text-white">Email</span>
-            </a>
+            <Customtext
+              link={true}
+              href="https://www.linkedin.com/in/ayush215mb/"
+            >
+              Linkedin DMs
+            </Customtext>
+            or
+            <Customtext link={true} href="mailto:ayush215mb@gmail.com">
+              Email
+            </Customtext>
             .
-          </p>
+          </Customtext>
         </div>
       </BgCard>
     </section>

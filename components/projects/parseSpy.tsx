@@ -1,58 +1,47 @@
 import React from "react";
 import BgCard from "../ui/bg-Card";
+import Customtext from "../ui/CustomText";
+import CustomButton from "../ui/CustomButton";
 
 const ParseSpy = () => {
   return (
-    <BgCard className="min-w-3xl flex flex-col gap-7 hover:border-gray-200 ">
+    <BgCard className=" w-full flex flex-col gap-7 hover:border-gray-200 ">
       <div className="flex flex-col gap-4">
-        <p className="text-white font-bold text-lg"> Parse Spy</p>
-        <div className="text-gray-200 text-sm ">
-          <p>
+        <Customtext heading={true}> Parse Spy</Customtext>
+        <div className="text-gray-200 text-xs md:text-sm">
+          <Customtext>
             - Developed an{" "}
-            <span className="font-bold text-white">
-              automated digital forensic tool
-            </span>{" "}
+            <Customtext bold={true}>automated digital forensic tool</Customtext>{" "}
             using Selenium WebDriver to simulate human interaction for
-            high-fidelity <span>data extraction </span> from{" "}
-            <span>social media</span>
+            high-fidelity <Customtext bold={true}>data extraction </Customtext>{" "}
+            from <Customtext bold={true}>social media</Customtext>
             platforms.
-          </p>
+          </Customtext>
           <br />
-          <p>
+          <Customtext>
             - Architected a{" "}
-            <span className="font-bold text-white">
-              modular desktop application
-            </span>{" "}
+            <Customtext bold={true}>modular desktop application</Customtext>{" "}
             with an Electron.js frontend and Node.js backend, achieving a{" "}
-            <span className="font-bold text-white">90% reduction</span> in mean
+            <Customtext bold={true}>90% reduction</Customtext> in mean
             processing time compared to manual investigation.
-          </p>
+          </Customtext>
           <br />
-          <p>
+          <Customtext>
             - Engineered an{" "}
-            <span className="font-bold text-white"> automated reporting</span>{" "}
-            module using PDFKit to generate comprehensive forensic reports with
-            <span className="font-bold text-white">
-              embedded screenshots
-            </span>{" "}
-            and verified timestamps.{" "}
-          </p>
+            <Customtext bold={true}> automated reporting</Customtext> module
+            using PDFKit to generate comprehensive forensic reports with
+            <Customtext bold={true}>embedded screenshots</Customtext> and
+            verified timestamps.{" "}
+          </Customtext>
           <br />
         </div>
       </div>
       <div className="flex">
-        <a href="https://parsespy.vercel.app/" target="_blank">
-          <button className="px-4 py-2 border border-neutral-700 rounded-l-lg hover:bg-neutral-700 hover:border-white cursor-pointer flex gap-2 hover:scale-105 ">
-            <p className="text-white font-bold">Live Link</p>
-            <span>🔗</span>
-          </button>
-        </a>
-        <a href="https://www.youtube.com/watch?v=mMH8NYUHNUg" target="_blank">
-          <button className="px-4 py-2 border border-neutral-700 rounded-r-lg hover:bg-neutral-700 hover:border-white cursor-pointer flex gap-2 hover:scale-105 ">
-            <p className="text-white font-bold">Youtube Link</p>
-            <span>🎥</span>
-          </button>
-        </a>
+        <CustomButton liveLink={true} href={"https://parsespy.vercel.app/"} />
+        <CustomButton
+          UtubeLink={true}
+          href="https://www.youtube.com/watch?v=mMH8NYUHNUg"
+        />
       </div>
     </BgCard>
   );

@@ -5,7 +5,10 @@ import NavbarText from "@/components/ui/NavbarText";
 import { NavbarOptions } from "@/constants/navbarOptions";
 
 const Navbar = () => {
-  const [isactive, setIsactive] = useState<NavbarOptions>("Home");
+  const [isactive, setIsactive] = useState<NavbarOptions>({
+    name: "Home",
+    path: "/",
+  });
   return (
     <header className="flex justify-center">
       <nav className=" border border-neutral-600 rounded-2xl py-1 bg-white/10 ">

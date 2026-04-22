@@ -8,11 +8,8 @@ export default function BgCard({
   className?: string;
 }>): React.ReactNode {
   return (
-    // <div
-    //   className={`border border-neutral-600 rounded-lg p-6 bg-neutral-800 ${className} `}
-    // >
     <div
-      className={`border border-neutral-600 rounded-lg p-6 bg-white/10 ${className} `}
+      className={`border border-neutral-600 rounded-lg p-4 md:p-6 bg-white/10 ${className} `}
     >
       {children}
     </div>

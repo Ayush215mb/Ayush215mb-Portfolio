@@ -99,7 +99,7 @@ export default function FractalTree() {
     };
 
     let lastTime = performance.now();
-    const interval = 1000 / 40; // 50fps
+    const interval = 1000 / 5; // 50fps
 
     const randomMiddle = () => random() * 0.6 + 0.2;
 

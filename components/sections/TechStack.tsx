@@ -1,14 +1,15 @@
-import { langauges } from "@/components/ui/languages";
+import { langauges } from "@/components/tech-stack/languages";
 import TechBox from "../ui/TechBox";
-import { Frontend } from "../ui/frontend";
-import { Backend } from "../ui/backend";
-import { DatabaseAndTools } from "../ui/dbandtools";
+import { Frontend } from "@/components/tech-stack/frontend";
+import { Backend } from "@/components/tech-stack/backend";
+import { DatabaseAndTools } from "@/components/tech-stack/dbandtools";
+import Customtext from "../ui/CustomText";
 
 const TechStack = () => {
   return (
     <section className="w-2/3 mt-10">
-      <p className="text-lg font-bold text-white">Tech Stack</p>
-      <p className="text-sm text-gray-200">Technologies I work with</p>
+      <Customtext heading={true}>Tech Stack</Customtext>
+      <Customtext>Technologies I work with</Customtext>
 
       <div className="flex flex-wrap gap-7 mt-7 ">
         <TechBox heading="Languages" Techs={langauges} />

@@ -1,6 +1,7 @@
 import React from "react";
 import BgCard from "./bg-Card";
-import { TechName } from "./languages";
+import { TechName } from "../tech-stack/languages";
+import Customtext from "./CustomText";
 
 const TechBox = ({
   heading,
@@ -11,8 +12,8 @@ const TechBox = ({
 }) => {
   return (
     <div className="">
-      <BgCard className="w-70 h-70 p-4">
-        <p className="text-gray-200 text-sm">{heading}</p>
+      <BgCard className=" w-full md:w-70 md:h-70 p-4">
+        <Customtext bold={true}>{heading}</Customtext>
         <div className="flex gap-3 max-w-80 flex-wrap mt-4">
           {Techs.map((Tech) => {
             return (

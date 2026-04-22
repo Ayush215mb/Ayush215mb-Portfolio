@@ -1,13 +1,14 @@
 import CropSense from "../projects/cropSense";
 import ParseSpy from "../projects/parseSpy";
 import Sentinel from "../projects/sentinel";
+import Customtext from "../ui/CustomText";
 
 const Projects = () => {
   return (
     <section className="w-2/3 mt-10">
-      <p className="text-lg text-white font-bold">Projects</p>
-      <p className="text-sm text-gray-200 ">Things I have built</p>
-      <div className="mt-7 flex gap-10 overflow-x-auto space-x-4 flex-nowrap scrollbar-hide ">
+      <Customtext heading={true}>Projects</Customtext>
+      <Customtext>Things I have built</Customtext>
+      <div className="mt-7 flex flex-col  gap-10 ">
         <Sentinel />
         <ParseSpy />
         <CropSense />

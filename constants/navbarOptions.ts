@@ -1,1 +1,4 @@
-export type NavbarOptions = "Home" | "Projects" | "Blogs";
+export type NavbarOptions = {
+  name: "Home" | "Projects" | "Blogs";
+  path: "/" | "/projects" | "/blogs";
+};
