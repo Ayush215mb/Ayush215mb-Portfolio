@@ -4,11 +4,11 @@ import "./globals.css";
 import Navbar from "@/components/common/navbar";
 import FractalTree from "@/components/common/fractal-tree";
 import Footer from "@/components/common/footer";
+import JsonLd from "@/components/common/JsonLD";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
-const BASE_URL = "https://glevoidd.in";
-
+const BASE_URL = "https://www.glevoidd.in";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
 
@@ -98,14 +98,12 @@ export const metadata: Metadata = {
     canonical: BASE_URL,
   },
 
-  // ─── Search Console Verification (fill in when ready) ────────────────────────
   verification: {
-    // google: "your-google-site-verification-token",
-    // yandex: "your-yandex-verification-token",
+    google:
+      "google-site-verification=jSMrGicdxu1oDA6bMUTuFlHGTAj51e58deAMpMyqnV0",
   },
-
+  themeColor: "#0a0a0a",
   other: {
-    "theme-color": "#0a0a0a",
     "color-scheme": "dark light",
     "format-detection": "telephone=no",
   },
@@ -118,6 +116,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${manrope.className}  h-full antialiased`}>
+      <head>
+        <link rel="author" type="text/plain" href="/llms.txt" />
+        <JsonLd />
+      </head>
       <body className=" bg-neutral-950 pt-20 pb-5 ">
         <FractalTree />
         <Navbar />

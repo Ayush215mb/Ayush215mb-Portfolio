@@ -1,0 +1,17 @@
+# Ayush Yadav — Full-Stack Developer
+> Portfolio of Ayush Yadav, a Full-Stack Developer from Kolkata, India.
+
+## About
+Ayush Yadav is a Full-Stack Developer specializing in React, Next.js, Node.js, NestJS, and React Native.
+He is a patent holder (Indian Patent 202531042207 A), hackathon winner, and co-founder of GDG NIT — 
+a developer community grown from 0 to 2,500 members in 6 months.
+
+## Projects
+- Sentinel: Real-time AI governance proxy with PII detection and prompt injection blocking
+- Crop Sense: IoT-enabled predictive farming platform (patented)
+- Parse Spy: Automated digital forensics tool using Electron.js and Selenium
+
+## Contact
+- Email: ayush215mb@gmail.com
+- LinkedIn: https://www.linkedin.com/in/ayush215mb/
+- GitHub: https://github.com/ayush215mb
