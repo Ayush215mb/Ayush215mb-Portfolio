@@ -45,5 +45,18 @@ export default function CustomButton({
         </button>
       </a>
     );
-  return <div>{children}</div>;
+
+  if (Submit)
+    return (
+      <a href={href} target="_blank">
+        <button className="px-4 py-2 border border-neutral-700 rounded-lg hover:bg-neutral-700 hover:border-white cursor-pointer  flex gap-2 hover:scale-105 ">
+          <Customtext BtnText={true}>{children} </Customtext>
+        </button>
+      </a>
+    );
+  return (
+    <button className="px-4 py-2 border border-neutral-700 rounded-lg hover:bg-neutral-700 hover:border-white cursor-pointer  flex gap-2 hover:scale-105">
+      {children}
+    </button>
+  );
 }

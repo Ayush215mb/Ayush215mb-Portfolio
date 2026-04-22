@@ -11,7 +11,7 @@ const TechStack = () => {
       <Customtext heading={true}>Tech Stack</Customtext>
       <Customtext>Technologies I work with</Customtext>
 
-      <div className="flex flex-wrap gap-7 mt-7 ">
+      <div className="flex flex-wrap gap-y-7 gap-x-5 mt-7 ">
         <TechBox heading="Languages" Techs={langauges} />
         <TechBox heading="Frontend" Techs={Frontend} />
         <TechBox heading="Bakcend" Techs={Backend} />
