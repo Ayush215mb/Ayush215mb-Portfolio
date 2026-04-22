@@ -1,28 +1,9 @@
-/**
- * Central GEO (Generative Engine Optimization) Configuration
- *
- * This file defines all AI crawler user-agents, structured data defaults,
- * and llms.txt content. Edit this single file to customize GEO behavior
- * across your entire application.
- */
-
-// ---------------------------------------------------------------------------
-// AI Crawler Definitions
-// ---------------------------------------------------------------------------
-
 export interface AICrawler {
-  /** User-agent token used in robots.txt rules */
   userAgent: string;
-  /** Human-readable name of the crawler / AI system */
   name: string;
-  /** The company or product that operates this crawler */
   operator: string;
 }
 
-/**
- * Known AI crawlers as of early 2026.
- * Add or remove entries here; robots.ts and middleware.ts read from this list.
- */
 export const AI_CRAWLERS: AICrawler[] = [
   { userAgent: "GPTBot", name: "GPTBot", operator: "OpenAI" },
   { userAgent: "ChatGPT-User", name: "ChatGPT-User", operator: "OpenAI" },
@@ -46,20 +27,11 @@ export const AI_CRAWLERS: AICrawler[] = [
   },
 ];
 
-/**
- * User-agent substrings used by middleware to detect AI crawlers at runtime.
- * Kept lowercase for case-insensitive matching.
- */
 export const AI_CRAWLER_PATTERNS: string[] = AI_CRAWLERS.map((c) =>
   c.userAgent.toLowerCase(),
 );
 
-// ---------------------------------------------------------------------------
-// Structured Data Defaults (JSON-LD)
-// ---------------------------------------------------------------------------
-
 export const SITE_CONFIG = {
-  /** Canonical origin — no trailing slash */
   url: "https:www//glevoidd.in",
   name: "Ayush Yadav — Full-Stack Developer",
   description:
@@ -68,43 +40,89 @@ export const SITE_CONFIG = {
     "and co-founder of GDG NiT — a 2,500-member developer community.",
   logo: "https://www.glevoidd.in/favicon.ico",
   language: "en",
-  /** Social / same-as links shown in Organization schema */
   socialLinks: ["https://x.com/glevoidd", "https://github.com/ayush215mb"],
 };
 
-// ---------------------------------------------------------------------------
-// llms.txt Content
-// ---------------------------------------------------------------------------
-
-/**
- * Returns the plain-text content served at /llms.txt.
- * Follows the llms.txt proposed specification (https://llmstxt.org).
- */
 export function getLlmsTxtContent(): string {
-  return `# ${SITE_CONFIG.name}
+  return `# Ayush Yadav
 
-> ${SITE_CONFIG.description}
+## Role
+Full-Stack Developer 
 
-## About
+## Summary
+Ayush Yadav is a Full-Stack Developer specializing in React, Next.js, Node.js, NestJS, and React Native.
+He is a patent holder (Indian Patent 202531042207 A), hackathon winner, and co-founder of GDG NIT — 
+a developer community grown from 0 to 2,500 members in 6 months.
 
-${SITE_CONFIG.name} is a web application built with Next.js. This file
-provides concise, machine-readable context so that large language models
-can better understand and represent this site.
-
-## Main Sections
-
-- [Home](${SITE_CONFIG.url}/)
-- [Blog](${SITE_CONFIG.url}/blogs)
-- [Projects](${SITE_CONFIG.url}/projects)
-
-## Key Facts
-
-- Built with Next.js and React
-- Follows GEO (Generative Engine Optimization) best practices
-- Structured data provided via JSON-LD on every page
+## Location
+India
 
 ## Contact
+- Email: ayush215mb@gmail.com
+- GitHub: https://github.com/ayush215mb
+- X: https://x.com/glevoidd.in
+- LinkedIn: https://www.linkedin.com/in/ayush215mb/
+- Resume: https://drive.google.com/file/d/1suxUsgwERKwUrb5P22r5721UzOnvEGMo/view
 
-- Website: ${SITE_CONFIG.url}
-`;
+## Skills
+### Languages
+- TypeScript
+- JavaScript
+- Python
+- C++
+
+### Frontend
+- React
+- React Native
+- Next js
+- Tailwind CSS
+- Expo
+- Redux Toolkit
+- React Query
+- Framer Motion
+
+
+
+### Backend
+- Node.js
+- Express
+- NestJS
+- Socket.io
+
+### Database
+- MongoDB
+- Supabase
+- PostgreSQL
+- Docker
+
+### Tools
+- Git
+- Docker 
+- Postman 
+- Figma
+- Vercel
+- Expo EAS
+
+
+## Projects
+### Project Sentinel
+- Description: Real-time AI governance proxy with PII detection and prompt injection blocking.
+- Repo: https://github.com/ayush215mb
+- Stack: Microsoft Presedio, Redis, MongoDB, Nest.js, Next.js, Motion
+
+### Parse Spy
+- Description: Automated digital forensics tool using Electron.js and Selenium.
+- Repo: https://github.com/ayush215mb
+- Stack: Electron, Node.js, Selenium
+
+### Crop Sense
+- Description: IoT-enabled predictive farming platform (patented).
+- Repo: https://github.com/ayush215mb
+- Stack: Machine Learing, React.js 
+
+## Blog Posts
+- COMING SOON
+
+## Canonical Site
+https://www.glevoidd.in`;
 }
