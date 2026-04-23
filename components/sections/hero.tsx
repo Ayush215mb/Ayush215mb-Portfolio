@@ -13,7 +13,7 @@ export default function Hero() {
               height={100}
               loading="eager"
               src="/AyushYadav.jpeg"
-              alt="User_image"
+              alt="Ayush Yadav — Full-Stack Developer from India"
               className="border border-neutral-100 rounded-2xl lg:max-w-md sm:max-w-sm max-w-xs  "
             />
             <div className="text-white">

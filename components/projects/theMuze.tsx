@@ -10,7 +10,7 @@ const TheMuze = () => {
         <Customtext bold={true}>The Muze (Demo)</Customtext>
         <div className="text-gray-200 text-sm ">
           <Customtext>
-            - Designed and Devloped a{" "}
+            - Designed and built a{" "}
             <Customtext bold={true}>beautiful landing page</Customtext> for a
             clothing brand.
           </Customtext>

@@ -14,7 +14,7 @@ const TechStack = () => {
       <div className="flex flex-wrap gap-y-7 gap-x-5 mt-7 ">
         <TechBox heading="Languages" Techs={langauges} />
         <TechBox heading="Frontend" Techs={Frontend} />
-        <TechBox heading="Bakcend" Techs={Backend} />
+        <TechBox heading="Backend" Techs={Backend} />
         <TechBox heading="Database and Tools" Techs={DatabaseAndTools} />
       </div>
     </section>
