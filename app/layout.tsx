@@ -1,14 +1,17 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/common/navbar";
-import FractalTree from "@/components/common/fractal-tree";
-import Footer from "@/components/common/footer";
-import JsonLd from "@/components/common/JsonLD";
+import { schema } from "@/components/common/JsonLD";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
 const BASE_URL = "https://www.glevoidd.in";
+
+export const viewport: Viewport = {
+  themeColor: "#0a0a0a",
+  colorScheme: "dark",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
 
@@ -59,17 +62,8 @@ export const metadata: Metadata = {
     title: "Ayush Yadav — Full-Stack Developer",
     description:
       "Full-Stack Developer specializing in React, Next.js, Node.js, and React Native. " +
-      "Patent holder, hackathon winner, and co-founder of GDG NIT.",
+      "Patent holder, hackathon winner, and co-founder of GDG NiT.",
     locale: "en_US",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Ayush Yadav — Full-Stack Developer",
-        type: "image/png",
-      },
-    ],
   },
 
   twitter: {
@@ -77,9 +71,8 @@ export const metadata: Metadata = {
     title: "Ayush Yadav — Full-Stack Developer",
     description:
       "Full-Stack Developer specializing in React, Next.js, Node.js, and React Native. " +
-      "Patent holder, hackathon winner, and co-founder of GDG NIT.",
+      "Patent holder, hackathon winner, and co-founder of GDG NiT.",
     creator: "@glevoidd",
-    images: ["/og-image.png"],
   },
 
   icons: {
@@ -99,12 +92,10 @@ export const metadata: Metadata = {
   },
 
   verification: {
-    google:
-      "google-site-verification=jSMrGicdxu1oDA6bMUTuFlHGTAj51e58deAMpMyqnV0",
+    google: "jSMrGicdxu1oDA6bMUTuFlHGTAj51e58deAMpMyqnV0",
   },
-  themeColor: "#0a0a0a",
+
   other: {
-    "color-scheme": "dark light",
     "format-detection": "telephone=no",
   },
 };
@@ -115,19 +106,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${manrope.className}  h-full antialiased`}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${manrope.className}  h-full antialiased`}
+    >
       <head>
         <link rel="author" type="text/plain" href="/llms.txt" />
-        <JsonLd />
+        <meta name="msvalidate.01" content="1BF4673C3030D00C738AFB0DBB1F4724" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
       </head>
-      <body className=" bg-neutral-950 pt-20 pb-5 ">
-        <FractalTree />
-        <Navbar />
-        <main className="w-full my-10  flex justify-center items-center flex-col gap-16 ">
-          {children}
-        </main>
-        <Footer />
-      </body>
+
+      <body className="bg-neutral-950">{children}</body>
     </html>
   );
 }

@@ -32,7 +32,7 @@ export const AI_CRAWLER_PATTERNS: string[] = AI_CRAWLERS.map((c) =>
 );
 
 export const SITE_CONFIG = {
-  url: "https:www//glevoidd.in",
+  url: "https://www.glevoidd.in",
   name: "Ayush Yadav — Full-Stack Developer",
   description:
     "Full-Stack Developer specializing in React, Next.js, Node.js, and React Native. " +
@@ -40,7 +40,11 @@ export const SITE_CONFIG = {
     "and co-founder of GDG NiT — a 2,500-member developer community.",
   logo: "https://www.glevoidd.in/favicon.ico",
   language: "en",
-  socialLinks: ["https://x.com/glevoidd", "https://github.com/ayush215mb"],
+  socialLinks: [
+    "https://x.com/glevoidd",
+    "https://github.com/Ayush215mb",
+    "https://www.linkedin.com/in/ayush215mb/",
+  ],
 };
 
 export function getLlmsTxtContent(): string {
@@ -51,7 +55,7 @@ Full-Stack Developer
 
 ## Summary
 Ayush Yadav is a Full-Stack Developer specializing in React, Next.js, Node.js, NestJS, and React Native.
-He is a patent holder (Indian Patent 202531042207 A), hackathon winner, and co-founder of GDG NIT — 
+He is a patent holder (Indian Patent 202531042207 A), hackathon winner, and co-founder of GDG NiT — 
 a developer community grown from 0 to 2,500 members in 6 months.
 
 ## Location
@@ -60,7 +64,7 @@ India
 ## Contact
 - Email: ayush215mb@gmail.com
 - GitHub: https://github.com/ayush215mb
-- X: https://x.com/glevoidd.in
+- X: https://x.com/glevoidd
 - LinkedIn: https://www.linkedin.com/in/ayush215mb/
 - Resume: https://drive.google.com/file/d/1suxUsgwERKwUrb5P22r5721UzOnvEGMo/view
 
@@ -93,7 +97,6 @@ India
 - MongoDB
 - Supabase
 - PostgreSQL
-- Docker
 
 ### Tools
 - Git
@@ -103,26 +106,41 @@ India
 - Vercel
 - Expo EAS
 
-
 ## Projects
+
 ### Project Sentinel
-- Description: Real-time AI governance proxy with PII detection and prompt injection blocking.
-- Repo: https://github.com/ayush215mb
-- Stack: Microsoft Presedio, Redis, MongoDB, Nest.js, Next.js, Motion
+- Description: Real-time AI governance middleware for LLM APIs (Gemini, OpenAI, Anthropic).
+  Intercepts requests to detect and redact 50+ PII types using Microsoft Presidio.
+  Blocks jailbreak and prompt injection attempts with sub-50ms latency.
+- Live: https://sentinel.theprinceraj.tech/
+- Stack: NestJS, Next.js, Microsoft Presidio, Redis, MongoDB
 
 ### Parse Spy
-- Description: Automated digital forensics tool using Electron.js and Selenium.
-- Repo: https://github.com/ayush215mb
-- Stack: Electron, Node.js, Selenium
+- Description: Desktop digital forensics application for extracting and reporting
+  social media data. Cuts investigation time by 90% vs manual methods.
+  Generates timestamped PDF reports with embedded screenshots.
+- Live: https://parsespy.vercel.app/
+- Stack: Electron.js, Node.js, Selenium WebDriver, PDFKit
 
 ### Crop Sense
-- Description: IoT-enabled predictive farming platform (patented).
-- Repo: https://github.com/ayush215mb
-- Stack: Machine Learing, React.js 
+- Description: IoT crop recommendation platform — Indian Patent 202531042207 A.
+  Processes real-time soil, temperature, and humidity sensor data through
+  Random Forest and Neural Network models to recommend optimal crops.
+- Live: https://crop-sense-ai.vercel.app/
+- Stack: React, Python, Machine Learning
+
+## Achievements
+- Indian Patent holder: Patent 202531042207 A (Crop Sense)
+- Co-founder, GDG NiT: Grew developer community from 0 to 2,500 members in 6 months
+- Hackathon winner
 
 ## Blog Posts
 - COMING SOON
 
-## Canonical Site
-https://www.glevoidd.in`;
+## Source
+- Canonical URL: https://www.glevoidd.in
+- Last Updated: 2025-06-01
+- Content License: All rights reserved
+- Author Verified: true
+`;
 }
