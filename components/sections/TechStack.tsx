@@ -7,18 +7,18 @@ import Customtext from "../ui/CustomText";
 
 const TechStack = () => {
   return (
-    <section className="w-2/3 mt-10">
+    <section className="md:w-2/3 w-full mt-10">
       <Customtext heading={true}>Tech Stack</Customtext>
       <Customtext subHeading={true}>Technologies I work with</Customtext>
 
       <div className="flex flex-wrap gap-y-7 gap-x-5 mt-7 ">
-        <TechBox heading="Languages" Techs={langauges} delay={0.2} />
-        <TechBox heading="Frontend" Techs={Frontend} delay={0.4} />
+        <TechBox heading="Languages" Techs={langauges} delay={0.1} />
+        <TechBox heading="Frontend" Techs={Frontend} delay={0.3} />
         <TechBox heading="Backend" Techs={Backend} delay={0.5} />
         <TechBox
           heading="Database and Tools"
           Techs={DatabaseAndTools}
-          delay={0.6}
+          delay={0.3}
         />
       </div>
     </section>

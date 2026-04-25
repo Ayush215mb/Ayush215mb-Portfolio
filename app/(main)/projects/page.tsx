@@ -18,10 +18,13 @@ export const metadata = {
 
 export default function Projectspage() {
   return (
-    <div className=" w-2/3 ">
-      <Customtext heading={true}>Projects</Customtext>
-      <Customtext>Things I have built</Customtext>
-      <div className="mt-7 flex flex-col gap-10  ">
+    <div className=" md:w-2/3 w-full ">
+      <div className="mx-10">
+        <Customtext heading={true}>Projects</Customtext>
+        <Customtext>Things I have built</Customtext>
+      </div>
+
+      <div className="mt-7 flex flex-col gap-10  mx-10 ">
         <Sentinel />
         <ParseSpy />
         <CropSense />

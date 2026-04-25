@@ -5,7 +5,7 @@ import Customtext from "../ui/CustomText";
 
 const Projects = () => {
   return (
-    <section className="w-2/3 mt-10">
+    <section className="md:w-2/3 w-full mt-10">
       <div className="flex justify-between items-center">
         <div>
           <Customtext heading={true}>Projects</Customtext>

@@ -5,7 +5,10 @@ import CustomButton from "../ui/CustomButton";
 import Image from "next/image";
 const ParseSpy = () => {
   return (
-    <BgCard className=" w-full flex flex-col gap-7 hover:border-gray-200 ">
+    <BgCard
+      className=" w-full flex flex-col gap-7 hover:border-gray-200 "
+      delay={0.3}
+    >
       <div className="flex flex-col gap-4">
         <Customtext heading={true}> Parse Spy</Customtext>
         <div className="flex md:flex-row flex-col-reverse gap-5 justify-between ">

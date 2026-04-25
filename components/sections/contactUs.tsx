@@ -3,7 +3,7 @@ import Form from "next/form";
 import Customtext from "../ui/CustomText";
 function ContactUs() {
   return (
-    <div className="text-white w-2/3">
+    <div className="text-white md:w-2/3 w-full">
       <Customtext heading={true}>Get in touch</Customtext>
       <Customtext>
         Fill the form or directly dm me on{" "}

@@ -5,7 +5,10 @@ import CustomButton from "../ui/CustomButton";
 import Image from "next/image";
 const CropSense = () => {
   return (
-    <BgCard className="w-full flex flex-col gap-7 hover:border-gray-200 ">
+    <BgCard
+      className="w-full flex flex-col gap-7 hover:border-gray-200 "
+      delay={0.1}
+    >
       <div className="flex flex-col gap-4">
         <Customtext heading={true}>Crop Sense</Customtext>
 

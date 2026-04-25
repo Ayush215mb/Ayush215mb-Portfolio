@@ -11,7 +11,7 @@ export default function MainLayout({
     <div className="pt-20 pb-5">
       <FractalTree />
       <Navbar />
-      <main className="w-full my-10 flex justify-center items-center flex-col gap-16">
+      <main className="w-full my-10 flex justify-center items-center flex-col gap-16 ">
         {children}
       </main>
       <Footer />
