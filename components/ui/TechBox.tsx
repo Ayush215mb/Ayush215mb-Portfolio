@@ -6,12 +6,14 @@ import Customtext from "./CustomText";
 const TechBox = ({
   heading,
   Techs,
+  delay,
 }: {
   heading: string;
   Techs: TechName[];
+  delay: number;
 }) => {
   return (
-    <BgCard className=" w-full md:w-70 md:h-70 p-4">
+    <BgCard className=" w-full md:w-70 md:h-70 p-4" delay={delay}>
       <Customtext bold={true}>{heading}</Customtext>
       <div className="flex gap-3 max-w-80 flex-wrap mt-4">
         {Techs.map((Tech) => {

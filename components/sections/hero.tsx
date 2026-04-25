@@ -1,3 +1,4 @@
+"use client";
 import BgCard from "../ui/bg-Card";
 import Image from "next/image";
 import { socials } from "@/components/icons/socials";
@@ -17,7 +18,10 @@ export default function Hero() {
               className="border border-neutral-100 rounded-2xl lg:max-w-md sm:max-w-sm max-w-xs  "
             />
             <div className="text-white">
-              <Customtext bold={true}>Ayush Yadav </Customtext>
+              <h1 className="text-xs md:text-sm text-white font-bold">
+                Ayush Yadav
+              </h1>
+
               <Customtext>Full-Stack Developer</Customtext>
               <Customtext> ayush215mb@gmail.com </Customtext>
             </div>

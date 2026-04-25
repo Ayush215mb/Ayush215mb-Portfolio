@@ -8,7 +8,7 @@ export const metadata = {
 export default function Blogpage() {
   return (
     <div className="min-h-screen flex justify-center items-center">
-      <Customtext heading={true}>COMING SOON</Customtext>
+      <Customtext subHeading={true}>COMING SOON</Customtext>
     </div>
   );
 }

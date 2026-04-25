@@ -2,39 +2,57 @@ import React from "react";
 import BgCard from "../ui/bg-Card";
 import Customtext from "../ui/CustomText";
 import CustomButton from "../ui/CustomButton";
+import Image from "next/image";
 
 const Sentinel = () => {
   return (
     <BgCard className=" w-full flex flex-col gap-7 hover:border-gray-200  ">
       <div className="flex flex-col gap-4">
         <Customtext heading={true}> Project Sentinel</Customtext>
-        <div className="text-gray-200 text-xs md:text-sm ">
-          <Customtext>
-            - Built a real-time{" "}
-            <Customtext bold={true}>AI governance proxy</Customtext> that
-            intercepts and validates all requests between applications and LLM
-            APIs (Gemini) before they reach the model.
-          </Customtext>
-          <br />
-          <Customtext>
-            - Engineered a <Customtext bold={true}>PII detection</Customtext>{" "}
-            and redaction engine using{" "}
-            <Customtext bold={true}>Microsoft Presidio </Customtext> capable of
-            identifying and masking 50+ sensitive data types including{" "}
-            <Customtext bold={true}>emails</Customtext>,{" "}
-            <Customtext bold={true}>credit card numbers</Customtext> and{" "}
-            <Customtext bold={true}>API keys</Customtext>.
-          </Customtext>
-          <br />
-          <Customtext>
-            - Implemented a semantic{" "}
-            <Customtext bold={true}>
-              {" "}
-              prompt injection detection system
-            </Customtext>{" "}
-            to <Customtext bold={true}>block jailbreak attempts</Customtext> and
-            system prompt overrides in real time with sub-50ms latency overhead.
-          </Customtext>
+        <div className="flex md:flex-row flex-col-reverse gap-5 justify-between ">
+          <div className="text-gray-200 text-xs md:text-sm ">
+            <Customtext>
+              - Built a real-time{" "}
+              <Customtext bold={true}>AI governance proxy</Customtext> that
+              intercepts and validates all requests between applications and LLM
+              APIs (Gemini) before they reach the model.
+            </Customtext>
+            <br />
+            <Customtext>
+              - Engineered a <Customtext bold={true}>PII detection</Customtext>{" "}
+              and redaction engine using{" "}
+              <Customtext bold={true}>Microsoft Presidio </Customtext> capable
+              of identifying and masking 50+ sensitive data types including{" "}
+              <Customtext bold={true}>emails</Customtext>,{" "}
+              <Customtext bold={true}>credit card numbers</Customtext> and{" "}
+              <Customtext bold={true}>API keys</Customtext>.
+            </Customtext>
+            <br />
+            <Customtext>
+              - Implemented a semantic{" "}
+              <Customtext bold={true}>
+                {" "}
+                prompt injection detection system
+              </Customtext>{" "}
+              to <Customtext bold={true}>
+                block jailbreak attempts
+              </Customtext>{" "}
+              and system prompt overrides in real time with sub-50ms latency
+              overhead.
+            </Customtext>
+          </div>
+          <div className="relative w-full md:w-90 shrink-0">
+            <Image
+              src="/ProjectSentinel.png"
+              width={1456}
+              height={816}
+              loading="eager"
+              sizes="(max-width: 768px) 100vw, 360px"
+              quality={100}
+              alt="Project Sentinel"
+              className="w-full h-auto rounded-lg"
+            />
+          </div>
         </div>
       </div>
       <div className="flex">

@@ -3,6 +3,7 @@ import React from "react";
 export default function Customtext({
   children,
   heading,
+  subHeading,
   bold,
   BtnText,
   emoji,
@@ -11,6 +12,7 @@ export default function Customtext({
 }: {
   children: React.ReactNode;
   heading?: boolean;
+  subHeading?: boolean;
   bold?: boolean;
   BtnText?: boolean;
   emoji?: boolean;
@@ -19,8 +21,11 @@ export default function Customtext({
 }) {
   if (heading)
     return (
-      <p className="text-sm md:text-lg text-white font-bold">{children}</p>
+      <h1 className="text-sm md:text-lg text-white font-bold">{children}</h1>
     );
+
+  if (subHeading)
+    return <h3 className="text-xs md:text-sm text-white">{children}</h3>;
 
   if (bold)
     return (

@@ -9,7 +9,7 @@ const Projects = () => {
       <div className="flex justify-between items-center">
         <div>
           <Customtext heading={true}>Projects</Customtext>
-          <Customtext>Things I have built</Customtext>
+          <Customtext subHeading={true}>Things I have built</Customtext>
         </div>
         <div>
           <a href="/projects">

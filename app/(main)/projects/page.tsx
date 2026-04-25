@@ -25,8 +25,8 @@ export default function Projectspage() {
         <Sentinel />
         <ParseSpy />
         <CropSense />
-        <WomenSafety />
         <TheMuze />
+        {/* <WomenSafety /> */}
       </div>
     </div>
   );
