@@ -4,7 +4,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: "https://www.glevoidd.in",
-      lastModified: new Date("2026-04-23"),
+      lastModified: new Date("2026-05-29"),
       changeFrequency: "monthly",
       priority: 1,
       alternates: {

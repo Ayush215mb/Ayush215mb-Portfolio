@@ -3,7 +3,7 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import { schema } from "@/components/common/JsonLD";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/next"; 
+import { Analytics } from "@vercel/analytics/next";
 const manrope = Manrope({ subsets: ["latin"] });
 
 const BASE_URL = "https://www.glevoidd.in";
@@ -61,6 +61,7 @@ export const metadata: Metadata = {
     url: BASE_URL,
     siteName: "Ayush Yadav",
     title: "Ayush Yadav — Full-Stack Developer",
+    images: "/og-image.png",
     description:
       "Full-Stack Developer specializing in React, Next.js, Node.js, and React Native. " +
       "Patent holder, hackathon winner, and co-founder of GDG NiT.",
@@ -70,6 +71,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ayush Yadav — Full-Stack Developer",
+    images: "/og-image.png",
     description:
       "Full-Stack Developer specializing in React, Next.js, Node.js, and React Native. " +
       "Patent holder, hackathon winner, and co-founder of GDG NiT.",
