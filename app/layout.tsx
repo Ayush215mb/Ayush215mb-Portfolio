@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     type: "website",
     url: BASE_URL,
     siteName: "Ayush Yadav",
-    title: "Ayush Yadav — Full-Stack Developer",
+    title: "Ayush Yadav",
     images: "/og-image.png",
     description:
       "Full-Stack Developer specializing in React, Next.js, Node.js, and React Native. " +
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Ayush Yadav — Full-Stack Developer",
+    title: "Ayush Yadav",
     images: "/og-image.png",
     description:
       "Full-Stack Developer specializing in React, Next.js, Node.js, and React Native. " +
