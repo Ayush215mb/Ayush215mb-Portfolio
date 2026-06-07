@@ -134,6 +134,10 @@ export default function RootLayout({
       <head>
         <link rel="author" type="text/plain" href="/llms.txt" />
         <meta name="msvalidate.01" content="1BF4673C3030D00C738AFB0DBB1F4724" />
+        <meta
+          name="p:domain_verify"
+          content="439ad8341554116b909d25072eb9ff4d"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
