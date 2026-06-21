@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   images: {
     qualities: [25, 50, 75, 100],
   },
+  experimental: {
+    optimizeCss: true,
+  },
 };
 
 export default nextConfig;

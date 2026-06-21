@@ -21,7 +21,7 @@ export default function Customtext({
 }) {
   if (heading)
     return (
-      <h1 className="text-sm md:text-lg text-white font-bold">{children}</h1>
+      <h2 className="text-sm md:text-lg text-white font-bold">{children}</h2>
     );
 
   if (subHeading)

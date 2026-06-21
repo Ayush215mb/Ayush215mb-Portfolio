@@ -11,7 +11,8 @@ export default function Hero() {
             <Image
               width={100}
               height={100}
-              loading="eager"
+              preload={true}
+              fetchPriority="high"
               src="/AyushYadav.jpeg"
               alt="Ayush Yadav — Full-Stack Developer from India"
               className="border border-neutral-100 rounded-2xl lg:max-w-md sm:max-w-sm max-w-xs  "
@@ -29,7 +30,11 @@ export default function Hero() {
             {socials.map((social) => {
               return (
                 <div key={social.link}>
-                  <a href={social.link} target="_blank">
+                  <a
+                    href={social.link}
+                    target="_blank"
+                    aria-label={social.name}
+                  >
                     <span className="hover:bg-neutral-700 flex p-3 rounded-lg max-h-12 cursor-pointer justify-center items-center ">
                       <p className="text-white size-4 "> {social.icon()}</p>
                     </span>

@@ -18,7 +18,7 @@ export default function CustomButton({
 }) {
   if (liveLink)
     return (
-      <a href={href} target="_blank">
+      <a href={href} target="_blank" aria-label="Live website link">
         <button className="md:px-4 md:py-2 p-2 border border-neutral-700 rounded-l-lg hover:bg-neutral-700 hover:border-white cursor-pointer flex gap-2 hover:scale-105 ">
           <Customtext BtnText={true}>Live Link</Customtext>
           <Customtext emoji={true}>🔗</Customtext>
@@ -28,7 +28,7 @@ export default function CustomButton({
 
   if (UtubeLink)
     return (
-      <a href={href} target="_blank">
+      <a href={href} target="_blank" aria-label="Youtube demo video link">
         <button className="md:px-4 md:py-2 p-2 border border-neutral-700  rounded-r-lg hover:bg-neutral-700 hover:border-white cursor-pointer flex gap-2 hover:scale-105 ">
           <Customtext BtnText={true}>Youtube Link</Customtext>
           <Customtext emoji={true}>🎥</Customtext>
@@ -38,7 +38,11 @@ export default function CustomButton({
 
   if (Patent)
     return (
-      <a href={href} target="_blank">
+      <a
+        href={href}
+        target="_blank"
+        aria-label="Google drive link of patent application"
+      >
         <button className="px-4 py-2 border border-neutral-700 rounded-r-lg hover:bg-neutral-700 hover:border-white cursor-pointer  flex gap-2 hover:scale-105 ">
           <Customtext BtnText={true}>Patent </Customtext>
           <Customtext emoji={true}>📄</Customtext>

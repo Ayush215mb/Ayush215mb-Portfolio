@@ -50,7 +50,6 @@ const ParseSpy = () => {
               height={816}
               loading="eager"
               sizes="(max-width: 768px) 100vw, 360px"
-              quality={100}
               alt="Project Sentinel"
               className="w-full h-auto rounded-lg"
             />
