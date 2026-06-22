@@ -1,4 +1,5 @@
 import CropSense from "@/components/projects/cropSense";
+import Kolkataparking from "@/components/projects/kolkata-parking";
 import ParseSpy from "@/components/projects/parseSpy";
 import Sentinel from "@/components/projects/sentinel";
 import TheMuze from "@/components/projects/theMuze";
@@ -26,6 +27,7 @@ export default function Projectspage() {
 
       <div className="mt-7 flex flex-col gap-10  mx-10 ">
         <Sentinel />
+        <Kolkataparking />
         <ParseSpy />
         <CropSense />
         <TheMuze />

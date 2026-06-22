@@ -115,6 +115,12 @@ India
 - Live: https://sentinel.theprinceraj.tech/
 - Stack: NestJS, Next.js, Microsoft Presidio, Redis, MongoDB
 
+### Kolkata Parking
+- Description: ParkKolkata is a community-driven parking discovery platform for Kolkata, built 
+  to solve the city's lack of organized parking information. Users can search any area on an interactive map, filter spots by vehicle type, pricing, and verification status, and contribute new locations with photos and details — no login required. The app pairs Next.js with a Supabase/Prisma backend and uses OpenStreetMap's Nominatim API for geocoding, with caching and city-bounded search to keep lookups fast and relevant.
+- Live: https://kolkata-parking.vercel.app/
+- Tech Stack: Next.js, Supabase, Prisma, Leaflet, OpenStreetMap.
+
 ### Parse Spy
 - Description: Desktop digital forensics application for extracting and reporting
   social media data. Cuts investigation time by 90% vs manual methods.

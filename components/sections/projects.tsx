@@ -1,4 +1,5 @@
 import CropSense from "../projects/cropSense";
+import Kolkataparking from "../projects/kolkata-parking";
 import ParseSpy from "../projects/parseSpy";
 import Sentinel from "../projects/sentinel";
 import Customtext from "../ui/CustomText";
@@ -23,8 +24,8 @@ const Projects = () => {
 
       <div className="mt-7 flex flex-col  gap-10 ">
         <Sentinel />
+        <Kolkataparking />
         <ParseSpy />
-        <CropSense />
       </div>
     </section>
   );

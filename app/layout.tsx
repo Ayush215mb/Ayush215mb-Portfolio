@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: OG_IMAGE,
-        alt: "Sentinel — LLM Governance Proxy",
+        alt: "Glevoidd.in",
       },
     ],
     description:
