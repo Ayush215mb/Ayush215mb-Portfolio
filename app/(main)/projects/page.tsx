@@ -3,13 +3,15 @@ import Kolkataparking from "@/components/projects/kolkata-parking";
 import ParseSpy from "@/components/projects/parseSpy";
 import Sentinel from "@/components/projects/sentinel";
 import TheMuze from "@/components/projects/theMuze";
-import WomenSafety from "@/components/projects/women-safety";
 import Customtext from "@/components/ui/CustomText";
 
 export const metadata = {
   title: "Projects",
   description:
     "Full-stack projects by Ayush Yadav — including an AI governance proxy, a digital forensics tool, and a patented IoT farming platform.",
+  alternates: {
+    canonical: "https://www.glevoidd.in/projects",
+  },
   openGraph: {
     title: "Projects | Ayush Yadav",
     description: "Full-stack projects by Ayush Yadav...",

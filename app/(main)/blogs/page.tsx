@@ -3,6 +3,15 @@ import React from "react";
 
 export const metadata = {
   title: "Blogs",
+  description: "Blogs written by Ayush Yadav",
+  alternates: {
+    canonical: "https://www.glevoidd.in/blogs",
+  },
+  openGraph: {
+    title: "Blogs | Ayush Yadav",
+    description: "Blogs written by Ayush Yadav",
+    url: "https://www.glevoidd.in/blogs",
+  },
 };
 
 export default function Blogpage() {
