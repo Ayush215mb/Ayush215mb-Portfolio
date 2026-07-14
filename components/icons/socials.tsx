@@ -5,6 +5,7 @@ import {
   BsTwitterX,
   BsFileEarmarkText,
 } from "react-icons/bs";
+import { SiLeetcode } from "react-icons/si";
 
 type social = {
   name: string;
@@ -25,6 +26,14 @@ export const socials: social[] = [
     link: "https://www.linkedin.com/in/ayush215mb/",
     icon: () => <BsLinkedin />,
   },
+  {
+    name: "LeetCode",
+    link: "https://leetcode.com/ayush215mb",
+    icon: () => {
+      return <SiLeetcode />;
+    },
+  },
+
   {
     name: "Twitter",
     link: "https://x.com/Glevoidd",

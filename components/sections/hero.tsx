@@ -57,8 +57,8 @@ export default function Hero() {
             <Customtext bold={true}>end to end</Customtext>. Whether I&apos;m{" "}
             <Customtext bold={true}>architecting a backend</Customtext>,{" "}
             <Customtext bold={true}>designing the frontend</Customtext>, or{" "}
-            <Customtext bold={true}>optimizing state</Customtext>
-            across 30 screens, I own the work until it works.
+            <Customtext bold={true}>optimizing state </Customtext> across 30
+            screens, I own the work until it works.
           </Customtext>
           <br />
           <Customtext>
