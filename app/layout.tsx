@@ -1,9 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import { Manrope } from "next/font/google";
+import { Manrope, Geist } from "next/font/google";
 import "./globals.css";
 import { schema } from "@/components/common/JsonLD";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+
 const manrope = Manrope({ subsets: ["latin"] });
 
 const BASE_URL = "https://www.glevoidd.in";
@@ -129,7 +133,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${manrope.className}  h-full antialiased`}
+      className={cn("h-full", "antialiased", manrope.className, "font-sans", geist.variable)}
     >
       <head>
         <link rel="author" type="text/plain" href="/llms.txt" />

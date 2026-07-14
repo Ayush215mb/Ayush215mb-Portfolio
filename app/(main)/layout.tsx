@@ -1,6 +1,7 @@
 import Navbar from "@/components/common/navbar";
 import FractalTree from "@/components/common/fractal-tree";
 import Footer from "@/components/common/footer";
+import { Toaster } from "@/components/ui/sonner";
 
 export default function MainLayout({
   children,
@@ -15,6 +16,7 @@ export default function MainLayout({
         {children}
       </main>
       <Footer />
+      <Toaster richColors />
     </div>
   );
 }
