@@ -1,8 +1,7 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import NavbarText from "@/components/ui/NavbarText";
-import { NavbarOptions } from "@/constants/navbarOptions";
 import { usePathname } from "next/navigation";
 import { motion } from "motion/react";
 

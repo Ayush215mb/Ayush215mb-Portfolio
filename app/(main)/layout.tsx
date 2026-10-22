@@ -4,19 +4,19 @@ import Footer from "@/components/common/footer";
 import { Toaster } from "@/components/ui/sonner";
 
 export default function MainLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode;
+    children: React.ReactNode;
 }) {
-  return (
-    <div className="pt-20 pb-5">
-      <FractalTree />
-      <Navbar />
-      <main className="w-full my-10 flex justify-center items-center flex-col gap-16 ">
-        {children}
-      </main>
-      <Footer />
-      <Toaster richColors />
-    </div>
-  );
+    return (
+        <div className="pt-20 pb-5">
+            <FractalTree />
+            <Navbar />
+            <main className="w-full my-10 flex justify-center items-center flex-col gap-16 ">
+                {children}
+            </main>
+            <Footer />
+            <Toaster richColors />
+        </div>
+    );
 }

@@ -1,6 +1,6 @@
 import { NavbarOptions } from "@/constants/navbarOptions";
 import Link from "next/link";
-import React, { useRef } from "react";
+import React from "react";
 export default function NavbarText({
     pathname,
     setPositions,

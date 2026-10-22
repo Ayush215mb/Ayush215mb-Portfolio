@@ -1,61 +1,69 @@
 export interface AICrawler {
-  userAgent: string;
-  name: string;
-  operator: string;
+    userAgent: string;
+    name: string;
+    operator: string;
 }
 
 export const AI_CRAWLERS: AICrawler[] = [
-  { userAgent: "GPTBot", name: "GPTBot", operator: "OpenAI" },
-  { userAgent: "ChatGPT-User", name: "ChatGPT-User", operator: "OpenAI" },
-  { userAgent: "OAI-SearchBot", name: "OAI-SearchBot", operator: "OpenAI" },
-  { userAgent: "Google-Extended", name: "Google-Extended", operator: "Google" },
-  { userAgent: "Googlebot", name: "Googlebot", operator: "Google" },
-  { userAgent: "anthropic-ai", name: "ClaudeBot", operator: "Anthropic" },
-  { userAgent: "ClaudeBot", name: "ClaudeBot", operator: "Anthropic" },
-  { userAgent: "Bytespider", name: "Bytespider", operator: "ByteDance" },
-  { userAgent: "PerplexityBot", name: "PerplexityBot", operator: "Perplexity" },
-  {
-    userAgent: "Applebot-Extended",
-    name: "Applebot-Extended",
-    operator: "Apple",
-  },
-  { userAgent: "cohere-ai", name: "Cohere", operator: "Cohere" },
-  {
-    userAgent: "Meta-ExternalAgent",
-    name: "Meta-ExternalAgent",
-    operator: "Meta",
-  },
+    { userAgent: "GPTBot", name: "GPTBot", operator: "OpenAI" },
+    { userAgent: "ChatGPT-User", name: "ChatGPT-User", operator: "OpenAI" },
+    { userAgent: "OAI-SearchBot", name: "OAI-SearchBot", operator: "OpenAI" },
+    {
+        userAgent: "Google-Extended",
+        name: "Google-Extended",
+        operator: "Google",
+    },
+    { userAgent: "Googlebot", name: "Googlebot", operator: "Google" },
+    { userAgent: "anthropic-ai", name: "ClaudeBot", operator: "Anthropic" },
+    { userAgent: "ClaudeBot", name: "ClaudeBot", operator: "Anthropic" },
+    { userAgent: "Bytespider", name: "Bytespider", operator: "ByteDance" },
+    {
+        userAgent: "PerplexityBot",
+        name: "PerplexityBot",
+        operator: "Perplexity",
+    },
+    {
+        userAgent: "Applebot-Extended",
+        name: "Applebot-Extended",
+        operator: "Apple",
+    },
+    { userAgent: "cohere-ai", name: "Cohere", operator: "Cohere" },
+    {
+        userAgent: "Meta-ExternalAgent",
+        name: "Meta-ExternalAgent",
+        operator: "Meta",
+    },
 ];
 
 export const AI_CRAWLER_PATTERNS: string[] = AI_CRAWLERS.map((c) =>
-  c.userAgent.toLowerCase(),
+    c.userAgent.toLowerCase(),
 );
 
 export const SITE_CONFIG = {
-  url: "https://www.glevoidd.in",
-  name: "Ayush Yadav — Full-Stack Developer",
-  description:
-    "Full-Stack Developer specializing in React, Next.js, Node.js, and React Native. " +
-    "Building scalable web and mobile applications. Patent holder, hackathon winner, " +
-    "and co-founder of GDG NiT — a 2,500-member developer community.",
-  logo: "https://www.glevoidd.in/favicon.ico",
-  language: "en",
-  socialLinks: [
-    "https://x.com/glevoidd",
-    "https://github.com/Ayush215mb",
-    "https://www.linkedin.com/in/ayush215mb/",
-  ],
+    url: "https://www.glevoidd.in",
+    name: "Ayush Yadav — Full-Stack Developer",
+    description:
+        "Full-Stack Developer specializing in React, Next.js, Node.js, and React Native. " +
+        "Building scalable web and mobile applications. Patent holder, hackathon winner, " +
+        "and co-founder of GDG NiT — a 2,500-member developer community.",
+    logo: "https://www.glevoidd.in/favicon.ico",
+    language: "en",
+    socialLinks: [
+        "https://x.com/glevoidd",
+        "https://github.com/Ayush215mb",
+        "https://www.linkedin.com/in/ayush215mb/",
+    ],
 };
 
 export function getLlmsTxtContent(): string {
-  return `# Ayush Yadav
+    return `# Ayush Yadav
 
 ## Role
-Full-Stack Developer 
+Full-Stack Developer
 
 ## Summary
 Ayush Yadav is a Full-Stack Developer specializing in React, Next.js, Node.js, NestJS, and React Native.
-He is a patent holder (Indian Patent 202531042207 A), hackathon winner, and co-founder of GDG NiT — 
+He is a patent holder (Indian Patent 202531042207 A), hackathon winner, and co-founder of GDG NiT —
 a developer community grown from 0 to 2,500 members in 6 months.
 
 ## Location
@@ -100,8 +108,8 @@ India
 
 ### Tools
 - Git
-- Docker 
-- Postman 
+- Docker
+- Postman
 - Figma
 - Vercel
 - Expo EAS
@@ -116,7 +124,7 @@ India
 - Stack: NestJS, Next.js, Microsoft Presidio, Redis, MongoDB
 
 ### Kolkata Parking
-- Description: ParkKolkata is a community-driven parking discovery platform for Kolkata, built 
+- Description: ParkKolkata is a community-driven parking discovery platform for Kolkata, built
   to solve the city's lack of organized parking information. Users can search any area on an interactive map, filter spots by vehicle type, pricing, and verification status, and contribute new locations with photos and details — no login required. The app pairs Next.js with a Supabase/Prisma backend and uses OpenStreetMap's Nominatim API for geocoding, with caching and city-bounded search to keep lookups fast and relevant.
 - Live: https://kolkata-parking.vercel.app/
 - Tech Stack: Next.js, Supabase, Prisma, Leaflet, OpenStreetMap.
