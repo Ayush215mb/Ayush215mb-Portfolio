@@ -41,7 +41,7 @@ export const socials: social[] = [
     },
     {
         name: "Resume",
-        link: "/CV-AyushYadav.pdf",
+        link: "/CV-glevoidd.pdf",
         icon: () => <BsFileEarmarkText />,
     },
 ];

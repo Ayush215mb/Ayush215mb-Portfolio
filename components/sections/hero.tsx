@@ -22,9 +22,7 @@ export default function Hero() {
                                 Ayush Yadav
                             </h1>
 
-                            <Customtext>
-                                Full-Stack Developer | AI Engineer
-                            </Customtext>
+                            <Customtext>Full-Stack & AI Engineer</Customtext>
                             <Customtext> ayush215mb@gmail.com </Customtext>
                         </div>
                     </div>

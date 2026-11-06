@@ -22,28 +22,35 @@ export const metadata: Metadata = {
     metadataBase: new URL(BASE_URL),
 
     title: {
-        default: "Ayush Yadav — Full-Stack Developer",
+        default: "Ayush Yadav — Full-Stack & AI Engineer",
         template: "%s | Ayush Yadav",
     },
 
     description:
-        "Full-Stack Developer specializing in React, Next.js, Node.js, and React Native. " +
-        "Building scalable web and mobile applications. Patent holder, hackathon winner, " +
-        "and co-founder of GDG NiT — a 2,500-member developer community.",
+        "Full-Stack & AI Engineer specializing in React/Next.js, Nestjs, React Native and Langchain ecosystem" +
+        "Building effective AI agents" +
+        "App Dev Lead of GDG Nit 2025" +
+        "Made in JIS cohort 1 ",
 
     keywords: [
         "Ayush Yadav",
         "Full-Stack Developer",
+        "AI Engineer",
+        "TypeScript",
+        "Langchain",
+        "Langgraph",
+        "Deepagents",
+        "Vercel/ai-sdk",
+        "ollama",
         "React Developer",
         "Next.js Developer",
         "Node.js Developer",
         "React Native Developer",
         "NestJS",
-        "TypeScript",
-        "GraphQL",
-        "Portfolio",
+        "Dev Portfolio",
         "Kolkata Developer",
         "glevoidd",
+        "ayush215mb",
     ],
 
     authors: [{ name: "Ayush Yadav", url: BASE_URL }],
@@ -65,8 +72,10 @@ export const metadata: Metadata = {
             },
         ],
         description:
-            "Full-Stack Developer specializing in React, Next.js, Node.js, and React Native. " +
-            "Patent holder, hackathon winner, and co-founder of GDG NiT.",
+            "Full-Stack & AI Engineer specializing in React/Next.js, Nestjs, React Native and Langchain ecosystem" +
+            "Building effective AI agents" +
+            "App Dev Lead of GDG Nit 2025" +
+            "Made in JIS cohort 1 ",
         locale: "en_US",
     },
 
@@ -80,8 +89,10 @@ export const metadata: Metadata = {
             },
         ],
         description:
-            "Full-Stack Developer specializing in React, Next.js, Node.js, and React Native. " +
-            "Patent holder, hackathon winner, and co-founder of GDG NiT.",
+            "Full-Stack & AI Engineer specializing in React/Next.js, Nestjs, React Native and Langchain ecosystem" +
+            "Building effective AI agents" +
+            "App Dev Lead of GDG Nit 2025" +
+            "Made in JIS cohort 1 ",
         creator: "@glevoidd",
     },
 

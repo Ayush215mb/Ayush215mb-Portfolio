@@ -59,22 +59,20 @@ export function getLlmsTxtContent(): string {
     return `# Ayush Yadav
 
 ## Role
-Full-Stack Developer
+Full-Stack & AI Engineer
 
 ## Summary
-Ayush Yadav is a Full-Stack Developer specializing in React, Next.js, Node.js, NestJS, and React Native.
-He is a patent holder (Indian Patent 202531042207 A), hackathon winner, and co-founder of GDG NiT —
-a developer community grown from 0 to 2,500 members in 6 months.
+Ayush Yadav is a Full-Stack & AI Engineer specializing in React/Next.js, Nestjs, React Native and Langchain ecosystem. He has mentored students and organized a lot of tech sessions in his tenure as the App Dev Lead of GDG Nit'2025. He was selected in the Made in JIS cohort 1 which was a 3 months pre-incubation program where he ideated Echomate, an AI sales agent.
 
 ## Location
-India
+Kolkata, India
 
 ## Contact
 - Email: ayush215mb@gmail.com
 - GitHub: https://github.com/ayush215mb
 - X: https://x.com/glevoidd
-- LinkedIn: https://www.linkedin.com/in/ayush215mb/
-- Resume: https://drive.google.com/file/d/1suxUsgwERKwUrb5P22r5721UzOnvEGMo/view
+- LinkedIn: https://www.linkedin.com/in/glevoidd/
+- Resume: https:www.glevoidd.in/CV-glevoidd
 
 ## Skills
 ### Languages
@@ -114,6 +112,14 @@ India
 - Vercel
 - Expo EAS
 
+### AI
+- ChatGPT SDK
+- Langchain ecosystem
+- Vercel/ai-sdk
+- Ollama
+- postgresSaver
+- RAG applications
+
 ## Projects
 
 ### Project Sentinel
@@ -145,15 +151,17 @@ India
 
 ## Achievements
 - Indian Patent holder: Patent 202531042207 A (Crop Sense)
-- Co-founder, GDG NiT: Grew developer community from 0 to 2,500 members in 6 months
-- Hackathon winner
+- App Dev Lead of GDG NiT'2025: Grew the developer community from 0 to 2,500 members in 6 months
+- Organized 10+ tech events
+- Mentored young students to develop critical thinking and follow the correct career path
+- Made in JIS cohort 1
 
 ## Blog Posts
 - COMING SOON
 
 ## Source
 - Canonical URL: https://www.glevoidd.in
-- Last Updated: 2025-06-01
+- Last Updated: 2026-11-06
 - Content License: All rights reserved
 - Author Verified: true
 `;
