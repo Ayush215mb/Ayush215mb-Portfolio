@@ -4,6 +4,7 @@ import { Frontend } from "@/components/tech-stack/frontend";
 import { Backend } from "@/components/tech-stack/backend";
 import { DatabaseAndTools } from "@/components/tech-stack/dbandtools";
 import Customtext from "../ui/CustomText";
+import { AI } from "../tech-stack/ai";
 
 const TechStack = () => {
     return (
@@ -20,6 +21,7 @@ const TechStack = () => {
                     Techs={DatabaseAndTools}
                     delay={0.3}
                 />
+                <TechBox heading="AI" Techs={AI} delay={0.5} />
             </div>
         </section>
     );

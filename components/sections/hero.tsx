@@ -22,7 +22,9 @@ export default function Hero() {
                                 Ayush Yadav
                             </h1>
 
-                            <Customtext>Full-Stack Developer</Customtext>
+                            <Customtext>
+                                Full-Stack Developer | AI Engineer
+                            </Customtext>
                             <Customtext> ayush215mb@gmail.com </Customtext>
                         </div>
                     </div>
@@ -52,23 +54,26 @@ export default function Hero() {
                     <Customtext>
                         Hi, I&apos;m
                         <Customtext bold={true}> Ayush Yadav</Customtext>, a
-                        Full-Stack Developer from 🇮🇳 India.
+                        Full-Stack & AI Engineer from 🇮🇳 India.
                     </Customtext>
                     <br />
                     <Customtext>
-                        I design and ship full-stack products{" "}
-                        <Customtext bold={true}>end to end</Customtext>. Whether
-                        I&apos;m{" "}
+                        Currently
                         <Customtext bold={true}>
-                            architecting a backend
-                        </Customtext>
-                        ,{" "}
+                            {" "}
+                            building effective agents
+                        </Customtext>{" "}
+                        and want to{" "}
                         <Customtext bold={true}>
-                            designing the frontend
+                            {" "}
+                            work in companies
+                        </Customtext>{" "}
+                        who are{" "}
+                        <Customtext bold={true}>
+                            {" "}
+                            building for the future
                         </Customtext>
-                        , or{" "}
-                        <Customtext bold={true}>optimizing state </Customtext>{" "}
-                        across 30 screens, I own the work until it works.
+                        .
                     </Customtext>
                     <br />
                     <Customtext>
