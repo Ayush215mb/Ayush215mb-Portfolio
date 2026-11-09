@@ -13,7 +13,7 @@ export const schema = {
                 "Full-Stack Developer specializing in React, Next.js, Node.js, and React Native. Patent holder, hackathon winner, and co-founder of GDG NiT — a 2,500-member developer community.",
             nationality: "Indian",
             sameAs: [
-                "https://www.linkedin.com/in/ayush215mb/",
+                "https://www.linkedin.com/in/glevoidd/",
                 "https://github.com/ayush215mb",
             ],
             knowsAbout: [
@@ -24,10 +24,15 @@ export const schema = {
                 "Node.js",
                 "NestJS",
                 "React Native",
-                "GraphQL",
                 "PostgreSQL",
+                "Supabase",
                 "MongoDB",
                 "Docker",
+                "Langchain",
+                "Langgraph",
+                "Deepagents",
+                "Langsmith",
+                "Vercel/ai-sdk",
             ],
             alumniOf: {
                 "@type": "CollegeOrUniversity",

@@ -23,7 +23,7 @@ export const socials: social[] = [
     },
     {
         name: "Linkedin",
-        link: "https://www.linkedin.com/in/ayush215mb/",
+        link: "https://www.linkedin.com/in/glevoidd/",
         icon: () => <BsLinkedin />,
     },
     {

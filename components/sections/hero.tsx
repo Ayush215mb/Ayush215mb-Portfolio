@@ -78,7 +78,7 @@ export default function Hero() {
                         You can reach me on
                         <Customtext
                             link={true}
-                            href="https://www.linkedin.com/in/ayush215mb/"
+                            href="https://www.linkedin.com/in/glevoidd/"
                         >
                             Linkedin DMs
                         </Customtext>
