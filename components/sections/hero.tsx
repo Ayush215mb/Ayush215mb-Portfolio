@@ -1,3 +1,4 @@
+"use client";
 import BgCard from "../ui/bg-Card";
 import Image from "next/image";
 import { socials } from "@/components/icons/socials";
@@ -5,7 +6,7 @@ import Customtext from "@/components/ui/CustomText";
 export default function Hero() {
     return (
         <section className="md:w-2/3 w-full">
-            <BgCard className=" w-full">
+            <BgCard className=" w-full" animate={false}>
                 <div className="flex md:justify-between mb-10  flex-col md:flex-row">
                     <div className="flex gap-4 md:items-start flex-col md:flex-row items-center">
                         <Image
