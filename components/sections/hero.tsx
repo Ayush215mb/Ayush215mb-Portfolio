@@ -36,10 +36,11 @@ export default function Hero() {
                                         aria-label={social.name}
                                     >
                                         <span className="hover:bg-neutral-700 flex p-3 rounded-lg max-h-12 cursor-pointer justify-center items-center ">
-                                            <p className="text-white size-4 ">
-                                                {" "}
-                                                {social.icon()}
-                                            </p>
+                                            <social.icon
+                                                className="text-white size-4"
+                                                aria-hidden="true"
+                                                focusable="false"
+                                            />
                                         </span>
                                     </a>
                                 </div>

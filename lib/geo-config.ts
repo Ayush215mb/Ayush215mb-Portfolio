@@ -67,12 +67,13 @@ Ayush Yadav is a Full-Stack & AI Engineer specializing in React/Next.js, Nestjs,
 ## Location
 Kolkata, India
 
-## Contact
-- Email: ayush215mb@gmail.com
-- GitHub: https://github.com/ayush215mb
-- X: https://x.com/glevoidd
-- LinkedIn: https://www.linkedin.com/in/glevoidd/
-- Resume: https:www.glevoidd.in/CV-glevoidd
+## Profiles
+- [Portfolio](https://www.glevoidd.in): Canonical site
+- [GitHub](https://github.com/ayush215mb): Source code and projects
+- [LinkedIn](https://www.linkedin.com/in/glevoidd/): Professional profile
+- [X](https://x.com/glevoidd): Updates and posts
+- [Resume](https://www.glevoidd.in/CV-glevoidd.pdf): Full CV (PDF)
+- [Email](mailto:ayush215mb@gmail.com): Contact
 
 ## Skills
 ### Languages
@@ -122,27 +123,26 @@ Kolkata, India
 
 ## Projects
 
-### Project Sentinel
+### [Project Sentinel](https://sentinel.theprinceraj.tech/):
 - Description: Real-time AI governance middleware for LLM APIs (Gemini, OpenAI, Anthropic).
   Intercepts requests to detect and redact 50+ PII types using Microsoft Presidio.
   Blocks jailbreak and prompt injection attempts with sub-50ms latency.
-- Live: https://sentinel.theprinceraj.tech/
 - Stack: NestJS, Next.js, Microsoft Presidio, Redis, MongoDB
 
-### Kolkata Parking
+### [ParkKolkata](https://kolkata-parking.glevoidd.in/):
 - Description: ParkKolkata is a community-driven parking discovery platform for Kolkata, built
   to solve the city's lack of organized parking information. Users can search any area on an interactive map, filter spots by vehicle type, pricing, and verification status, and contribute new locations with photos and details — no login required. The app pairs Next.js with a Supabase/Prisma backend and uses OpenStreetMap's Nominatim API for geocoding, with caching and city-bounded search to keep lookups fast and relevant.
 - Live: https://kolkata-parking.vercel.app/
 - Tech Stack: Next.js, Supabase, Prisma, Leaflet, OpenStreetMap.
 
-### Parse Spy
+### [Parse Spy](https://parsespy.vercel.app/):
 - Description: Desktop digital forensics application for extracting and reporting
   social media data. Cuts investigation time by 90% vs manual methods.
   Generates timestamped PDF reports with embedded screenshots.
 - Live: https://parsespy.vercel.app/
 - Stack: Electron.js, Node.js, Selenium WebDriver, PDFKit
 
-### Crop Sense
+### [Crop Sense](https://crop-sense-ai.vercel.app/):
 - Description: IoT crop recommendation platform — Indian Patent 202531042207 A.
   Processes real-time soil, temperature, and humidity sensor data through
   Random Forest and Neural Network models to recommend optimal crops.
@@ -161,7 +161,7 @@ Kolkata, India
 
 ## Source
 - Canonical URL: https://www.glevoidd.in
-- Last Updated: 2026-11-06
+- Last Updated: 2026-11-24
 - Content License: All rights reserved
 - Author Verified: true
 `;
